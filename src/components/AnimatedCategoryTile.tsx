@@ -11,7 +11,7 @@ import {
 } from "@/data/products";
 import { easeOutSoft } from "@/lib/motion";
 
-const CYCLE_MS = 3200;
+const CYCLE_MS = 3400;
 
 export function AnimatedCategoryTile({
   list,
@@ -54,42 +54,56 @@ export function AnimatedCategoryTile({
           className={`relative aspect-[4/5] overflow-hidden bg-gradient-to-br ${accent.from} ${accent.to}`}
         >
           <div
-            className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(255,255,255,0.6),transparent_60%)]"
+            className="pointer-events-none absolute inset-0 z-10 bg-[radial-gradient(circle_at_30%_20%,rgba(255,255,255,0.35),transparent_60%)]"
             aria-hidden
           />
 
           <AnimatePresence mode="wait">
             <motion.div
               key={current.id}
-              initial={{ opacity: 0, scale: 0.88, y: 12, rotate: -3 }}
-              animate={{ opacity: 1, scale: 1, y: 0, rotate: 0 }}
-              exit={{ opacity: 0, scale: 0.92, y: -8, rotate: 2 }}
-              transition={{ duration: 0.6, ease: easeOutSoft }}
-              className="absolute inset-0 flex flex-col items-center justify-center gap-4"
+              initial={{ opacity: 0, scale: 1.06 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0, scale: 0.98 }}
+              transition={{ duration: 0.8, ease: easeOutSoft }}
+              className="absolute inset-0"
             >
-              <div className="relative">
-                <div
-                  className={`absolute inset-0 rounded-full bg-white/40 blur-2xl`}
-                  aria-hidden
-                />
-                <span className="relative text-8xl drop-shadow-sm sm:text-9xl">
-                  {current.emoji}
-                </span>
-              </div>
-              <div className="mx-4 rounded-2xl border border-white/60 bg-white/70 px-3 py-1.5 text-center text-[11px] font-semibold text-zinc-800 shadow-sm backdrop-blur-md">
-                {current.title}
-              </div>
+              <img
+                src={current.imageUrl}
+                alt={current.title}
+                loading={index === 0 ? "eager" : "lazy"}
+                className="h-full w-full object-cover"
+              />
             </motion.div>
           </AnimatePresence>
 
-          <div className="absolute bottom-3 left-1/2 flex -translate-x-1/2 gap-1.5">
+          <div className="pointer-events-none absolute inset-x-0 bottom-0 z-20 bg-gradient-to-t from-black/60 via-black/20 to-transparent px-4 pb-3 pt-14">
+            <AnimatePresence mode="wait">
+              <motion.div
+                key={current.id + "-caption"}
+                initial={{ opacity: 0, y: 8 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -4 }}
+                transition={{ duration: 0.45, ease: easeOutSoft }}
+                className="flex items-end justify-between gap-3"
+              >
+                <span className="line-clamp-2 text-[11px] font-semibold text-white/95 drop-shadow-sm">
+                  {current.title}
+                </span>
+                <span className="shrink-0 rounded-full border border-white/40 bg-white/20 px-2 py-0.5 text-[10px] font-semibold text-white backdrop-blur-md">
+                  {current.priceRange}
+                </span>
+              </motion.div>
+            </AnimatePresence>
+          </div>
+
+          <div className="absolute bottom-3 left-1/2 z-30 flex -translate-x-1/2 gap-1.5">
             {products.map((_, i) => (
               <span
                 key={i}
-                className={`h-1 rounded-full transition-all duration-300 ${
+                className={`h-1 rounded-full transition-all duration-500 ${
                   i === active
-                    ? "w-4 bg-zinc-800/70"
-                    : "w-1 bg-zinc-800/25"
+                    ? "w-5 bg-white/95"
+                    : "w-1.5 bg-white/40"
                 }`}
               />
             ))}

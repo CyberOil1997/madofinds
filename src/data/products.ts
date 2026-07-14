@@ -3,8 +3,11 @@ export type Product = {
   title: string;
   blurb: string;
   priceRange: string;
-  emoji: string;
-  amazonSearchTerm: string;
+  asin: string;
+  productUrl: string;
+  imageUrl: string;
+  videoId: string;
+  videoUrl: string;
   listSlugs: string[];
 };
 
@@ -58,9 +61,16 @@ export const ACCENT_STYLES: Record<
 
 const AFFILIATE_TAG = "madofinds-20";
 
-export function amazonUrl(searchTerm: string): string {
-  const q = encodeURIComponent(searchTerm);
-  return `https://www.amazon.com/s?k=${q}&tag=${AFFILIATE_TAG}`;
+export function productUrl(asin: string): string {
+  return `https://www.amazon.com/dp/${asin}?tag=${AFFILIATE_TAG}`;
+}
+
+export function shortsUrl(videoId: string): string {
+  return `https://www.youtube.com/shorts/${videoId}`;
+}
+
+export function embedUrl(videoId: string): string {
+  return `https://www.youtube.com/embed/${videoId}`;
 }
 
 export const IDEA_LISTS: IdeaList[] = [
@@ -96,186 +106,174 @@ export const IDEA_LISTS: IdeaList[] = [
 
 export const PRODUCTS: Product[] = [
   {
-    id: "over-door-organizer",
-    title: "Over-the-Door Hanging Organizer",
-    blurb: "10 clear pockets for shoes, cleaning supplies, or pantry overflow.",
-    priceRange: "Under $20",
-    emoji: "🚪",
-    amazonSearchTerm: "over the door hanging organizer 10 pocket clear",
-    listSlugs: ["under-25-space-savers"],
-  },
-  {
-    id: "under-bed-bins",
-    title: "Under-Bed Rolling Storage Bins",
-    blurb: "Wheels + lids = hidden storage you'll actually use.",
-    priceRange: "$18-$28",
-    emoji: "📦",
-    amazonSearchTerm: "under bed rolling storage bins with lid set of 2",
+    id: "yaasheen-under-bed",
+    title: "YAASHEEN Under-Bed Storage with Wheels",
+    blurb:
+      "60L rolling bins with clear lids. Slide out, grab your seasonal stuff, slide back — no more lifting the mattress.",
+    priceRange: "$35-$45 / 2-pack",
+    asin: "B0CXPY9ZRN",
+    productUrl: "https://www.amazon.com/dp/B0CXPY9ZRN?tag=madofinds-20",
+    imageUrl:
+      "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&auto=format&fit=crop&q=80",
+    videoId: "MpTf0y57rwg",
+    videoUrl: "https://www.youtube.com/shorts/MpTf0y57rwg",
     listSlugs: ["under-25-space-savers", "studio-must-haves"],
   },
   {
-    id: "bed-risers",
-    title: "Adjustable Bed Risers",
-    blurb: "Add 3-8 inches of under-bed storage in 30 seconds.",
-    priceRange: "Under $15",
-    emoji: "🛏️",
-    amazonSearchTerm: "adjustable bed risers heavy duty",
-    listSlugs: ["under-25-space-savers"],
-  },
-  {
-    id: "shoe-rack",
-    title: "Behind-the-Door Shoe Rack",
-    blurb: "Frees up 4 feet of floor space instantly.",
+    id: "ulg-over-door-organizer",
+    title: "ULG Over-the-Door Organizer",
+    blurb:
+      "5 large clear pockets + 10 mesh side pockets. Perfect for pantry overflow, cleaning gear, or shoes.",
     priceRange: "Under $22",
-    emoji: "👟",
-    amazonSearchTerm: "over the door shoe rack organizer",
+    asin: "B09L4R5T55",
+    productUrl: "https://www.amazon.com/dp/B09L4R5T55?tag=madofinds-20",
+    imageUrl:
+      "https://images.unsplash.com/photo-1687953413905-731f620177ae?w=800&auto=format&fit=crop&q=80",
+    videoId: "VjD3G19oN48",
+    videoUrl: "https://www.youtube.com/shorts/VjD3G19oN48",
     listSlugs: ["under-25-space-savers"],
   },
   {
-    id: "drawer-dividers",
-    title: "Collapsible Drawer Dividers",
-    blurb: "Bamboo, adjustable, and hides the chaos inside every drawer.",
-    priceRange: "Under $18",
-    emoji: "🗂️",
-    amazonSearchTerm: "adjustable bamboo drawer dividers expandable",
-    listSlugs: ["under-25-space-savers"],
-  },
-
-  {
-    id: "can-organizer",
-    title: "Stackable Can Organizer",
-    blurb: "Turns cabinet chaos into a mini bodega. First-in, first-out.",
-    priceRange: "$14-$22",
-    emoji: "🥫",
-    amazonSearchTerm: "stackable can organizer pantry",
-    listSlugs: ["tiny-kitchen-essentials"],
-  },
-  {
-    id: "magnetic-knife-strip",
-    title: "Magnetic Knife Strip",
-    blurb: "Reclaim the entire knife block's worth of counter.",
-    priceRange: "Under $20",
-    emoji: "🔪",
-    amazonSearchTerm: "magnetic knife strip wall mount stainless",
-    listSlugs: ["tiny-kitchen-essentials", "renter-friendly-upgrades"],
-  },
-  {
-    id: "under-shelf-basket",
-    title: "Under-Shelf Hanging Baskets",
-    blurb: "Free hidden storage under any cabinet shelf. No install.",
-    priceRange: "Set of 4 · $15",
-    emoji: "🧺",
-    amazonSearchTerm: "under shelf basket hanging wire",
-    listSlugs: ["tiny-kitchen-essentials"],
-  },
-  {
-    id: "lazy-susan",
-    title: "Cabinet Lazy Susan (2-Tier)",
-    blurb: "Every spice, every time. No more digging.",
+    id: "spaceaid-drawer-dividers",
+    title: "SpaceAid Bamboo Drawer Dividers",
+    blurb:
+      "4 adjustable dividers + 9 inserts. Fits 17-22\" drawers. Ends silverware chaos forever.",
     priceRange: "Under $25",
-    emoji: "🌀",
-    amazonSearchTerm: "2 tier lazy susan cabinet organizer",
-    listSlugs: ["tiny-kitchen-essentials"],
-  },
-  {
-    id: "fridge-bins",
-    title: "Clear Fridge Organizer Bins",
-    blurb: "The 'wait, we have that?' problem, solved.",
-    priceRange: "Set of 8 · $32",
-    emoji: "🧊",
-    amazonSearchTerm: "clear fridge organizer bins stackable set",
-    listSlugs: ["tiny-kitchen-essentials"],
+    asin: "B094624Q8Z",
+    productUrl: "https://www.amazon.com/dp/B094624Q8Z?tag=madofinds-20",
+    imageUrl:
+      "https://images.unsplash.com/photo-1678108040468-0cc9addd984d?w=800&auto=format&fit=crop&q=80",
+    videoId: "8r3PVyIlma8",
+    videoUrl: "https://www.youtube.com/shorts/8r3PVyIlma8",
+    listSlugs: ["under-25-space-savers", "tiny-kitchen-essentials"],
   },
 
   {
-    id: "room-divider-curtain",
-    title: "Room Divider Curtain",
-    blurb: "Studio → 1BR feel in under an hour. No wall required.",
-    priceRange: "$28-$45",
-    emoji: "🪟",
-    amazonSearchTerm: "room divider curtain ceiling track",
-    listSlugs: ["studio-must-haves", "renter-friendly-upgrades"],
+    id: "hoojo-fridge-bins",
+    title: "HOOJO Clear Fridge Organizer Bins",
+    blurb:
+      "8-piece stackable set. The 'wait, we still have that?' problem, solved.",
+    priceRange: "Set of 8 · $28-$35",
+    asin: "B089LLDN39",
+    productUrl: "https://www.amazon.com/dp/B089LLDN39?tag=madofinds-20",
+    imageUrl:
+      "https://images.unsplash.com/photo-1565620731358-e8c038abc8d1?w=800&auto=format&fit=crop&q=80",
+    videoId: "szWpNGJecE8",
+    videoUrl: "https://www.youtube.com/shorts/szWpNGJecE8",
+    listSlugs: ["tiny-kitchen-essentials"],
   },
   {
-    id: "fold-down-desk",
-    title: "Wall-Mounted Fold-Down Desk",
-    blurb: "A real workspace that disappears when you're done.",
-    priceRange: "$65-$95",
-    emoji: "💻",
-    amazonSearchTerm: "wall mounted fold down desk",
-    listSlugs: ["studio-must-haves"],
-  },
-  {
-    id: "storage-ottoman",
-    title: "Storage Ottoman with Tray Lid",
-    blurb: "Seat, coffee table, and hidden storage in one square foot.",
-    priceRange: "$45-$75",
-    emoji: "🪑",
-    amazonSearchTerm: "storage ottoman with tray lid",
-    listSlugs: ["studio-must-haves"],
-  },
-  {
-    id: "drying-rack",
-    title: "Compact Foldable Drying Rack",
-    blurb: "Full load capacity, folds to 2 inches when not in use.",
-    priceRange: "Under $35",
-    emoji: "👕",
-    amazonSearchTerm: "foldable clothes drying rack compact",
-    listSlugs: ["studio-must-haves"],
-  },
-  {
-    id: "over-toilet-shelf",
-    title: "Over-the-Toilet Storage Shelf",
-    blurb: "3 tiers of previously-wasted vertical space.",
-    priceRange: "$40-$60",
-    emoji: "🚽",
-    amazonSearchTerm: "over the toilet storage shelf freestanding",
-    listSlugs: ["studio-must-haves", "renter-friendly-upgrades"],
-  },
-
-  {
-    id: "command-hooks",
-    title: "Heavy-Duty Adhesive Wall Hooks",
-    blurb: "Hold up to 7.5 lbs. Zero holes, zero damage deposit drama.",
-    priceRange: "16-pack · $18",
-    emoji: "🪝",
-    amazonSearchTerm: "command hooks heavy duty large",
-    listSlugs: ["renter-friendly-upgrades"],
-  },
-  {
-    id: "tension-rods",
-    title: "Adjustable Tension Rods (Set of 2)",
-    blurb: "Closet dividers, curtain rods, under-sink shelves — all no-drill.",
-    priceRange: "Under $18",
-    emoji: "➖",
-    amazonSearchTerm: "spring tension rod adjustable 28 to 48 inch",
-    listSlugs: ["renter-friendly-upgrades"],
-  },
-  {
-    id: "removable-wallpaper",
-    title: "Peel-and-Stick Removable Wallpaper",
-    blurb: "Landlord-safe accent walls in 30 minutes.",
-    priceRange: "$30-$50 / roll",
-    emoji: "🖼️",
-    amazonSearchTerm: "peel and stick removable wallpaper roll",
-    listSlugs: ["renter-friendly-upgrades"],
-  },
-  {
-    id: "backsplash-tiles",
-    title: "Peel-and-Stick Backsplash Tiles",
-    blurb: "Kitchen glow-up without a security deposit sacrifice.",
-    priceRange: "$28-$55",
-    emoji: "🧱",
-    amazonSearchTerm: "peel and stick backsplash tile kitchen",
-    listSlugs: ["renter-friendly-upgrades"],
-  },
-  {
-    id: "led-strips",
-    title: "Adhesive LED Strip Lights (16 ft)",
-    blurb: "Under-cabinet, behind-TV, along-baseboard — instant mood.",
+    id: "lamu-lazy-susan",
+    title: "LAMU 2-Tier Lazy Susan Turntable",
+    blurb:
+      "9.25\" clear rotating spice rack. Every spice, every time — no more back-of-cabinet mystery jars.",
     priceRange: "Under $22",
-    emoji: "💡",
-    amazonSearchTerm: "led strip lights 16ft color changing remote",
+    asin: "B0CS3FBC6W",
+    productUrl: "https://www.amazon.com/dp/B0CS3FBC6W?tag=madofinds-20",
+    imageUrl:
+      "https://images.unsplash.com/photo-1556909211-36987daf7b4d?w=800&auto=format&fit=crop&q=80",
+    videoId: "OpVP45nGFsg",
+    videoUrl: "https://www.youtube.com/shorts/OpVP45nGFsg",
+    listSlugs: ["tiny-kitchen-essentials"],
+  },
+  {
+    id: "modern-innovations-knife-strip",
+    title: "Modern Innovations Magnetic Knife Bar",
+    blurb:
+      "16\" stainless steel wall-mount strip. Reclaim your whole knife-block's worth of counter.",
+    priceRange: "Under $25",
+    asin: "B016ISHAC8",
+    productUrl: "https://www.amazon.com/dp/B016ISHAC8?tag=madofinds-20",
+    imageUrl:
+      "https://images.unsplash.com/photo-1556037843-347ddff9f4b0?w=800&auto=format&fit=crop&q=80",
+    videoId: "ZsAuUs4oF-s",
+    videoUrl: "https://www.youtube.com/shorts/ZsAuUs4oF-s",
+    listSlugs: ["tiny-kitchen-essentials"],
+  },
+
+  {
+    id: "fsobeiialeo-ottoman-tray",
+    title: "FSOBEIIALEO Storage Ottoman with Tray Lid",
+    blurb:
+      "Seat, coffee table, and hidden storage in one square foot. Folds flat when you move.",
+    priceRange: "$28-$45",
+    asin: "B07CWKRVV1",
+    productUrl: "https://www.amazon.com/dp/B07CWKRVV1?tag=madofinds-20",
+    imageUrl:
+      "https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?w=800&auto=format&fit=crop&q=80",
+    videoId: "8r3PVyIlma8",
+    videoUrl: "https://www.youtube.com/shorts/8r3PVyIlma8",
+    listSlugs: ["studio-must-haves"],
+  },
+  {
+    id: "simple-deluxe-over-toilet",
+    title: "Simple Deluxe Over-the-Toilet Cabinet",
+    blurb:
+      "3 tiers of previously-wasted vertical space. Fits standard toilets, no wall damage.",
+    priceRange: "$55-$85",
+    asin: "B0GX9TGP36",
+    productUrl: "https://www.amazon.com/dp/B0GX9TGP36?tag=madofinds-20",
+    imageUrl:
+      "https://images.unsplash.com/photo-1614631446501-abcf76949eca?w=800&auto=format&fit=crop&q=80",
+    videoId: "VjD3G19oN48",
+    videoUrl: "https://www.youtube.com/shorts/VjD3G19oN48",
+    listSlugs: ["studio-must-haves", "renter-friendly-upgrades"],
+  },
+  {
+    id: "fsobeiialeo-ottoman-cube",
+    title: "FSOBEIIALEO Small Storage Ottoman Cube",
+    blurb:
+      "The pocket-sized version. 11.8\" cube — perfect footrest that hides shoes, cables, or blankets.",
+    priceRange: "Under $22",
+    asin: "B07FM3V9QD",
+    productUrl: "https://www.amazon.com/dp/B07FM3V9QD?tag=madofinds-20",
+    imageUrl:
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&auto=format&fit=crop&q=80",
+    videoId: "OpVP45nGFsg",
+    videoUrl: "https://www.youtube.com/shorts/OpVP45nGFsg",
+    listSlugs: ["under-25-space-savers", "studio-must-haves"],
+  },
+
+  {
+    id: "smart-tiles-backsplash",
+    title: "Smart Tiles 3D Peel-and-Stick Backsplash",
+    blurb:
+      "5 sheets, real 3D texture, hair-dryer removable when you move. TikTok-viral for good reason.",
+    priceRange: "$38-$55",
+    asin: "B0BMB2ZRZW",
+    productUrl: "https://www.amazon.com/dp/B0BMB2ZRZW?tag=madofinds-20",
+    imageUrl:
+      "https://images.unsplash.com/photo-1504977402025-84285fea814b?w=800&auto=format&fit=crop&q=80",
+    videoId: "haIhReSIzYg",
+    videoUrl: "https://www.youtube.com/shorts/haIhReSIzYg",
+    listSlugs: ["renter-friendly-upgrades", "tiny-kitchen-essentials"],
+  },
+  {
+    id: "ksipze-led-strips",
+    title: "KSIPZE 100ft LED Strip Lights",
+    blurb:
+      "RGB, music sync, app control. Under-cabinet, behind-TV, along-baseboard — instant mood.",
+    priceRange: "Under $30",
+    asin: "B09V366BDY",
+    productUrl: "https://www.amazon.com/dp/B09V366BDY?tag=madofinds-20",
+    imageUrl:
+      "https://images.unsplash.com/photo-1559619081-8fd2cc754ca3?w=800&auto=format&fit=crop&q=80",
+    videoId: "BU-WeYE8jLY",
+    videoUrl: "https://www.youtube.com/shorts/BU-WeYE8jLY",
+    listSlugs: ["renter-friendly-upgrades"],
+  },
+  {
+    id: "tic-tac-tiles-wallpaper",
+    title: "Tic Tac Tiles Subway Peel-and-Stick",
+    blurb:
+      "10 sheets of clean subway white with faux grout. Landlord-safe kitchen glow-up in 30 minutes.",
+    priceRange: "$32-$48 / 10-pack",
+    asin: "B07MQVKTT8",
+    productUrl: "https://www.amazon.com/dp/B07MQVKTT8?tag=madofinds-20",
+    imageUrl:
+      "https://images.unsplash.com/photo-1556910096-6f5e72db6803?w=800&auto=format&fit=crop&q=80",
+    videoId: "haIhReSIzYg",
+    videoUrl: "https://www.youtube.com/shorts/haIhReSIzYg",
     listSlugs: ["renter-friendly-upgrades"],
   },
 ];
