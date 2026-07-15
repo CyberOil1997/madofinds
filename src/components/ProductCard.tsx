@@ -1,99 +1,67 @@
 "use client";
 
 import { useState } from "react";
-import { motion } from "motion/react";
-import { ArrowUpRight, Play } from "lucide-react";
-import { AccentKey, ACCENT_STYLES, Product } from "@/data/products";
-import { easeOutSoft } from "@/lib/motion";
+import { Play } from "lucide-react";
+import { Product } from "@/data/products";
 import { VideoModal } from "./VideoModal";
 
-export function ProductCard({
-  product,
-  accent,
-  index = 0,
-}: {
-  product: Product;
-  accent: AccentKey;
-  index?: number;
-}) {
-  const style = ACCENT_STYLES[accent];
+export function ProductCard({ product }: { product: Product }) {
   const [videoOpen, setVideoOpen] = useState(false);
 
   return (
     <>
-      <motion.div
-        initial={{ opacity: 0, y: 12 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, margin: "-60px" }}
-        transition={{
-          duration: 0.5,
-          delay: (index % 4) * 0.06,
-          ease: easeOutSoft,
-        }}
-        whileHover={{ y: -4 }}
-        className="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-zinc-200/80 bg-white transition-shadow duration-300 hover:shadow-lg hover:shadow-zinc-900/5 dark:border-zinc-800/80 dark:bg-zinc-900 dark:hover:shadow-black/40"
-      >
+      <div className="group relative flex h-full w-[180px] shrink-0 flex-col overflow-hidden sm:w-[210px]">
         <a
           href={product.productUrl}
           target="_blank"
           rel="noopener noreferrer sponsored"
-          className="relative block"
+          className="relative block aspect-square overflow-hidden rounded-lg border border-zinc-200 bg-white transition-all duration-200 group-hover:border-zinc-300 group-hover:shadow-md dark:border-zinc-800 dark:bg-zinc-900"
         >
-          <div
-            className={`relative aspect-square overflow-hidden bg-gradient-to-br ${style.from} ${style.to}`}
-          >
-            <img
-              src={product.imageUrl}
-              alt={product.title}
-              loading="lazy"
-              className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
-              onError={(e) => {
-                (e.currentTarget as HTMLImageElement).style.opacity = "0";
-              }}
-            />
-            <div
-              className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100"
-              aria-hidden
-            />
-            <div className="absolute top-2.5 right-2.5 rounded-full border border-white/50 bg-white/90 px-2.5 py-1 text-[10px] font-semibold text-zinc-900 shadow-sm backdrop-blur-md">
-              {product.priceRange}
-            </div>
-          </div>
+          <img
+            src={product.imageUrl}
+            alt={product.title}
+            loading="lazy"
+            className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+            onError={(e) => {
+              (e.currentTarget as HTMLImageElement).style.opacity = "0";
+            }}
+          />
         </a>
 
         {product.videoId && (
           <button
             onClick={() => setVideoOpen(true)}
             aria-label={`Watch ${product.title} demo`}
-            className="absolute left-2.5 top-2.5 z-10 grid h-8 w-8 place-items-center rounded-full bg-zinc-900/85 text-white shadow-md ring-1 ring-white/20 backdrop-blur-md transition-all hover:scale-110 hover:bg-zinc-900"
+            className="absolute right-2 top-2 z-10 grid h-9 w-9 place-items-center rounded-full bg-zinc-900/85 text-white shadow-md ring-1 ring-white/20 backdrop-blur-md transition-all hover:scale-110 hover:bg-zinc-900"
           >
             <Play className="h-3.5 w-3.5 fill-current" aria-hidden />
           </button>
         )}
 
-        <a
-          href={product.productUrl}
-          target="_blank"
-          rel="noopener noreferrer sponsored"
-          className="flex flex-1 flex-col gap-1.5 p-4"
-        >
-          <h3 className="text-sm font-semibold leading-snug text-zinc-900 line-clamp-2 dark:text-zinc-50">
+        <div className="mt-3 flex flex-col gap-1.5">
+          <a
+            href={product.productUrl}
+            target="_blank"
+            rel="noopener noreferrer sponsored"
+            className="text-[13px] font-medium leading-snug text-zinc-800 line-clamp-2 transition-colors hover:text-amber-700 dark:text-zinc-200 dark:hover:text-amber-400"
+          >
             {product.title}
-          </h3>
-          <p className="text-xs leading-relaxed text-zinc-600 line-clamp-2 dark:text-zinc-400">
-            {product.blurb}
-          </p>
-          <div className="mt-auto flex items-center justify-between pt-2 text-[11px] font-medium">
-            <span className="text-zinc-500 dark:text-zinc-500">
-              View on Amazon
+          </a>
+          <div className="flex items-baseline gap-1.5">
+            <span className="text-sm font-semibold text-zinc-900 dark:text-zinc-100">
+              {product.priceRange}
             </span>
-            <ArrowUpRight
-              className={`h-3.5 w-3.5 ${style.text} transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5`}
-              aria-hidden
-            />
           </div>
-        </a>
-      </motion.div>
+          <a
+            href={product.productUrl}
+            target="_blank"
+            rel="noopener noreferrer sponsored"
+            className="mt-1 inline-flex w-full items-center justify-center rounded-full bg-amber-400 px-3 py-2 text-xs font-semibold text-zinc-900 shadow-sm transition-all hover:bg-amber-500 hover:shadow-md active:scale-[0.98]"
+          >
+            Buy on Amazon
+          </a>
+        </div>
+      </div>
 
       <VideoModal
         videoId={product.videoId}
