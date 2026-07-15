@@ -18,7 +18,11 @@ export function ProductCard({ product }: { product: Product }) {
           className="relative block aspect-square overflow-hidden rounded-lg border border-zinc-200 bg-white transition-all duration-200 group-hover:border-zinc-300 group-hover:shadow-md dark:border-zinc-800 dark:bg-zinc-900"
         >
           <img
-            src={product.imageUrl}
+            src={
+              product.imageUrl.startsWith("http")
+                ? product.imageUrl
+                : `${process.env.NEXT_PUBLIC_BASE_PATH || ""}${product.imageUrl}`
+            }
             alt={product.title}
             loading="lazy"
             className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
