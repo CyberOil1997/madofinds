@@ -6,7 +6,7 @@ import { Target, FlaskConical, Play, Users } from "lucide-react";
 export const metadata: Metadata = {
   title: "About — Mado Finds",
   description:
-    "Mado Finds curates the best small-space living products on Amazon. Every recommendation is hand-picked, tested, and renter-friendly.",
+    "Mado Finds curates the best of Amazon into a scrollable feed. Every recommendation is hand-picked and worth the click.",
 };
 
 const cards = [
@@ -14,13 +14,13 @@ const cards = [
     icon: Target,
     title: "What we cover",
     body:
-      "Storage, organization, multi-purpose furniture, and renter-friendly upgrades — sourced from Amazon and grouped into idea lists you can shop in one click.",
+      "Kitchen, home, gadgets, editor's picks — whatever's worth the click on Amazon that week. Grouped into scrollable lists you can shop in seconds.",
   },
   {
     icon: FlaskConical,
     title: "How we pick",
     body:
-      "Every product on the site is one we would buy for ourselves. We prioritize genuine reviews, honest price ranges, and things that solve a real small-space problem.",
+      "Every product is one we would buy for ourselves. We prioritize genuine reviews, honest price ranges, and things people actually love using.",
   },
   {
     icon: Play,
@@ -51,13 +51,12 @@ export default function AboutPage() {
               About Mado Finds
             </span>
             <h1 className="mt-6 text-balance text-4xl font-bold tracking-tight text-zinc-900 sm:text-5xl md:text-6xl dark:text-zinc-50">
-              Curated finds for people who live small.
+              A shoppable feed of Amazon finds.
             </h1>
             <p className="mt-6 text-pretty text-lg leading-relaxed text-zinc-600 sm:text-xl dark:text-zinc-300">
-              Mado Finds is a hand-curated shop of the small-space living
-              products we actually use — the kind of stuff that makes a studio
-              feel like a one-bedroom, turns dead corners into storage, and
-              never damages a security deposit.
+              We spend the time so you don't have to. Every product on the site
+              is one we'd buy for ourselves, priced right, and worth clicking
+              through to.
             </p>
           </div>
         </div>

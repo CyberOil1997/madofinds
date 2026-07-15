@@ -16,8 +16,8 @@ export function Footer() {
               </span>
             </Link>
             <p className="mt-4 text-sm leading-relaxed text-zinc-600 dark:text-zinc-400">
-              A hand-curated shop of small-space living finds on Amazon. Every
-              product tested, priced under a splurge, and renter-safe.
+              A curated feed of Amazon finds worth clicking Buy on. New drops
+              every week — scroll, shop, repeat.
             </p>
           </div>
 
@@ -85,7 +85,7 @@ export function Footer() {
 
         <div className="mt-8 flex flex-col gap-3 text-[11px] text-zinc-500 sm:flex-row sm:items-center sm:justify-between dark:text-zinc-500">
           <p>© {new Date().getFullYear()} Mado Digital. All rights reserved.</p>
-          <p>Made with care in small apartments everywhere.</p>
+          <p>Handpicked, tested, and worth the click.</p>
         </div>
       </div>
     </footer>

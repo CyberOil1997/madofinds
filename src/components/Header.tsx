@@ -12,13 +12,8 @@ export function Header() {
           >
             M
           </span>
-          <span className="flex flex-col leading-none">
-            <span className="text-[15px] font-semibold tracking-tight text-zinc-900 dark:text-zinc-50">
-              Mado Finds
-            </span>
-            <span className="mt-0.5 text-[10px] font-medium uppercase tracking-[0.14em] text-zinc-500 dark:text-zinc-500">
-              Small-space, big life
-            </span>
+          <span className="text-[15px] font-semibold tracking-tight text-zinc-900 dark:text-zinc-50">
+            Mado Finds
           </span>
         </Link>
         <nav className="flex items-center gap-1 text-sm font-medium">

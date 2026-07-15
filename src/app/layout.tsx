@@ -13,9 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Mado Finds — Amazon finds for tiny apartments",
+  title: "Mado Finds — Handpicked Amazon finds",
   description:
-    "Hand-picked storage, organization, and space-saving Amazon products for small-space living. Renter-friendly, tested, and priced under a splurge.",
+    "A curated feed of Amazon finds worth clicking Buy on. New drops every week — scroll, shop, repeat.",
 };
 
 export default function RootLayout({
