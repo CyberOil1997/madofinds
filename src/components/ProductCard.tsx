@@ -2,11 +2,15 @@
 
 import { useState } from "react";
 import { Play } from "lucide-react";
-import { Product } from "@/data/products";
+import { Product, PRODUCTS } from "@/data/products";
 import { VideoModal } from "./VideoModal";
 
 export function ProductCard({ product }: { product: Product }) {
   const [videoOpen, setVideoOpen] = useState(false);
+
+  const relatedProducts = product.videoId
+    ? PRODUCTS.filter((p) => p.videoId === product.videoId)
+    : undefined;
 
   return (
     <>
@@ -70,6 +74,7 @@ export function ProductCard({ product }: { product: Product }) {
       <VideoModal
         videoId={product.videoId}
         title={product.title}
+        products={relatedProducts}
         open={videoOpen}
         onClose={() => setVideoOpen(false)}
       />

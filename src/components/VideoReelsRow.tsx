@@ -24,6 +24,10 @@ export function VideoReelsRow() {
     title: string;
   } | null>(null);
 
+  const activeProducts = activeVideo
+    ? PRODUCTS.filter((p) => p.videoId === activeVideo.id)
+    : undefined;
+
   return (
     <>
       <section className="scroll-mt-24">
@@ -96,6 +100,7 @@ export function VideoReelsRow() {
       <VideoModal
         videoId={activeVideo?.id ?? null}
         title={activeVideo?.title}
+        products={activeProducts}
         open={!!activeVideo}
         onClose={() => setActiveVideo(null)}
       />

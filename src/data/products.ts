@@ -120,10 +120,9 @@ export const PRODUCTS: Product[] = [
     priceRange: "$35-$45 / 2-pack",
     asin: "B0CXPY9ZRN",
     productUrl: "https://www.amazon.com/dp/B0CXPY9ZRN?tag=madofinds-20",
-    imageUrl:
-      "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&auto=format&fit=crop&q=80",
-    videoId: "MpTf0y57rwg",
-    videoUrl: "https://www.youtube.com/shorts/MpTf0y57rwg",
+    imageUrl: "/product-images/B0CXPY9ZRN.jpg",
+    videoId: "",
+    videoUrl: "",
     listSlugs: ["under-25-space-savers", "studio-must-haves"],
   },
   {
@@ -134,10 +133,9 @@ export const PRODUCTS: Product[] = [
     priceRange: "Under $22",
     asin: "B09L4R5T55",
     productUrl: "https://www.amazon.com/dp/B09L4R5T55?tag=madofinds-20",
-    imageUrl:
-      "https://images.unsplash.com/photo-1687953413905-731f620177ae?w=800&auto=format&fit=crop&q=80",
-    videoId: "VjD3G19oN48",
-    videoUrl: "https://www.youtube.com/shorts/VjD3G19oN48",
+    imageUrl: "/product-images/B09L4R5T55.jpg",
+    videoId: "",
+    videoUrl: "",
     listSlugs: ["under-25-space-savers"],
   },
   {
@@ -148,10 +146,9 @@ export const PRODUCTS: Product[] = [
     priceRange: "Under $25",
     asin: "B094624Q8Z",
     productUrl: "https://www.amazon.com/dp/B094624Q8Z?tag=madofinds-20",
-    imageUrl:
-      "https://images.unsplash.com/photo-1678108040468-0cc9addd984d?w=800&auto=format&fit=crop&q=80",
-    videoId: "8r3PVyIlma8",
-    videoUrl: "https://www.youtube.com/shorts/8r3PVyIlma8",
+    imageUrl: "/product-images/B094624Q8Z.jpg",
+    videoId: "",
+    videoUrl: "",
     listSlugs: ["under-25-space-savers", "tiny-kitchen-essentials"],
   },
 
@@ -163,10 +160,9 @@ export const PRODUCTS: Product[] = [
     priceRange: "Set of 8 · $28-$35",
     asin: "B089LLDN39",
     productUrl: "https://www.amazon.com/dp/B089LLDN39?tag=madofinds-20",
-    imageUrl:
-      "https://images.unsplash.com/photo-1565620731358-e8c038abc8d1?w=800&auto=format&fit=crop&q=80",
-    videoId: "szWpNGJecE8",
-    videoUrl: "https://www.youtube.com/shorts/szWpNGJecE8",
+    imageUrl: "/product-images/B089LLDN39.jpg",
+    videoId: "",
+    videoUrl: "",
     listSlugs: ["tiny-kitchen-essentials"],
   },
   {
@@ -177,10 +173,9 @@ export const PRODUCTS: Product[] = [
     priceRange: "Under $22",
     asin: "B0CS3FBC6W",
     productUrl: "https://www.amazon.com/dp/B0CS3FBC6W?tag=madofinds-20",
-    imageUrl:
-      "https://images.unsplash.com/photo-1556909211-36987daf7b4d?w=800&auto=format&fit=crop&q=80",
-    videoId: "OpVP45nGFsg",
-    videoUrl: "https://www.youtube.com/shorts/OpVP45nGFsg",
+    imageUrl: "/product-images/B0CS3FBC6W.jpg",
+    videoId: "",
+    videoUrl: "",
     listSlugs: ["tiny-kitchen-essentials"],
   },
   {
@@ -191,10 +186,9 @@ export const PRODUCTS: Product[] = [
     priceRange: "Under $25",
     asin: "B016ISHAC8",
     productUrl: "https://www.amazon.com/dp/B016ISHAC8?tag=madofinds-20",
-    imageUrl:
-      "https://images.unsplash.com/photo-1556037843-347ddff9f4b0?w=800&auto=format&fit=crop&q=80",
-    videoId: "ZsAuUs4oF-s",
-    videoUrl: "https://www.youtube.com/shorts/ZsAuUs4oF-s",
+    imageUrl: "/product-images/B016ISHAC8.jpg",
+    videoId: "",
+    videoUrl: "",
     listSlugs: ["tiny-kitchen-essentials"],
   },
 
@@ -206,10 +200,9 @@ export const PRODUCTS: Product[] = [
     priceRange: "$28-$45",
     asin: "B07CWKRVV1",
     productUrl: "https://www.amazon.com/dp/B07CWKRVV1?tag=madofinds-20",
-    imageUrl:
-      "https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?w=800&auto=format&fit=crop&q=80",
-    videoId: "8r3PVyIlma8",
-    videoUrl: "https://www.youtube.com/shorts/8r3PVyIlma8",
+    imageUrl: "/product-images/B07CWKRVV1.jpg",
+    videoId: "",
+    videoUrl: "",
     listSlugs: ["studio-must-haves"],
   },
   {
@@ -220,10 +213,9 @@ export const PRODUCTS: Product[] = [
     priceRange: "$55-$85",
     asin: "B0GX9TGP36",
     productUrl: "https://www.amazon.com/dp/B0GX9TGP36?tag=madofinds-20",
-    imageUrl:
-      "https://images.unsplash.com/photo-1614631446501-abcf76949eca?w=800&auto=format&fit=crop&q=80",
-    videoId: "VjD3G19oN48",
-    videoUrl: "https://www.youtube.com/shorts/VjD3G19oN48",
+    imageUrl: "/product-images/B0GX9TGP36.jpg",
+    videoId: "",
+    videoUrl: "",
     listSlugs: ["studio-must-haves", "renter-friendly-upgrades"],
   },
   {
@@ -234,10 +226,9 @@ export const PRODUCTS: Product[] = [
     priceRange: "Under $22",
     asin: "B07FM3V9QD",
     productUrl: "https://www.amazon.com/dp/B07FM3V9QD?tag=madofinds-20",
-    imageUrl:
-      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&auto=format&fit=crop&q=80",
-    videoId: "OpVP45nGFsg",
-    videoUrl: "https://www.youtube.com/shorts/OpVP45nGFsg",
+    imageUrl: "/product-images/B07FM3V9QD.jpg",
+    videoId: "",
+    videoUrl: "",
     listSlugs: ["under-25-space-savers", "studio-must-haves"],
   },
 
@@ -249,10 +240,9 @@ export const PRODUCTS: Product[] = [
     priceRange: "$38-$55",
     asin: "B0BMB2ZRZW",
     productUrl: "https://www.amazon.com/dp/B0BMB2ZRZW?tag=madofinds-20",
-    imageUrl:
-      "https://images.unsplash.com/photo-1504977402025-84285fea814b?w=800&auto=format&fit=crop&q=80",
-    videoId: "haIhReSIzYg",
-    videoUrl: "https://www.youtube.com/shorts/haIhReSIzYg",
+    imageUrl: "/product-images/B0BMB2ZRZW.jpg",
+    videoId: "",
+    videoUrl: "",
     listSlugs: ["renter-friendly-upgrades", "tiny-kitchen-essentials"],
   },
   {
@@ -263,10 +253,9 @@ export const PRODUCTS: Product[] = [
     priceRange: "Under $30",
     asin: "B09V366BDY",
     productUrl: "https://www.amazon.com/dp/B09V366BDY?tag=madofinds-20",
-    imageUrl:
-      "https://images.unsplash.com/photo-1559619081-8fd2cc754ca3?w=800&auto=format&fit=crop&q=80",
-    videoId: "BU-WeYE8jLY",
-    videoUrl: "https://www.youtube.com/shorts/BU-WeYE8jLY",
+    imageUrl: "/product-images/B09V366BDY.jpg",
+    videoId: "",
+    videoUrl: "",
     listSlugs: ["renter-friendly-upgrades"],
   },
   {
@@ -277,10 +266,9 @@ export const PRODUCTS: Product[] = [
     priceRange: "$32-$48 / 10-pack",
     asin: "B07MQVKTT8",
     productUrl: "https://www.amazon.com/dp/B07MQVKTT8?tag=madofinds-20",
-    imageUrl:
-      "https://images.unsplash.com/photo-1556910096-6f5e72db6803?w=800&auto=format&fit=crop&q=80",
-    videoId: "haIhReSIzYg",
-    videoUrl: "https://www.youtube.com/shorts/haIhReSIzYg",
+    imageUrl: "/product-images/B07MQVKTT8.jpg",
+    videoId: "",
+    videoUrl: "",
     listSlugs: ["renter-friendly-upgrades"],
   },
 
