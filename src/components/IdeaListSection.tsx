@@ -26,14 +26,18 @@ export function IdeaListSection({ list }: { list: IdeaList }) {
 
       <div className="relative">
         <div
-          className="no-scrollbar flex gap-4 overflow-x-auto scroll-smooth px-5 pb-3 sm:gap-5 sm:px-8"
+          className="no-scrollbar flex items-stretch gap-4 overflow-x-auto scroll-smooth px-5 pb-3 sm:gap-5 sm:px-8"
           style={{
             scrollSnapType: "x mandatory",
             scrollPadding: "0 2rem",
           }}
         >
           {products.map((p) => (
-            <div key={p.id} style={{ scrollSnapAlign: "start" }}>
+            <div
+              key={p.id}
+              className="flex"
+              style={{ scrollSnapAlign: "start" }}
+            >
               <ProductCard product={p} />
             </div>
           ))}

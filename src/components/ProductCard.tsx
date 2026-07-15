@@ -38,17 +38,17 @@ export function ProductCard({ product }: { product: Product }) {
           </button>
         )}
 
-        <div className="mt-3 flex flex-col gap-1.5">
+        <div className="mt-3 flex flex-1 flex-col gap-1.5">
           <a
             href={product.productUrl}
             target="_blank"
             rel="noopener noreferrer sponsored"
-            className="text-[13px] font-medium leading-snug text-zinc-800 line-clamp-2 transition-colors hover:text-amber-700 dark:text-zinc-200 dark:hover:text-amber-400"
+            className="line-clamp-2 min-h-[2.6em] text-[13px] font-medium leading-[1.3] text-zinc-800 transition-colors hover:text-amber-700 dark:text-zinc-200 dark:hover:text-amber-400"
           >
             {product.title}
           </a>
-          <div className="flex items-baseline gap-1.5">
-            <span className="text-sm font-semibold text-zinc-900 dark:text-zinc-100">
+          <div className="flex h-5 items-baseline gap-1.5">
+            <span className="whitespace-nowrap text-sm font-semibold text-zinc-900 dark:text-zinc-100">
               {product.priceRange}
             </span>
           </div>
@@ -56,7 +56,7 @@ export function ProductCard({ product }: { product: Product }) {
             href={product.productUrl}
             target="_blank"
             rel="noopener noreferrer sponsored"
-            className="mt-1 inline-flex w-full items-center justify-center rounded-full bg-amber-400 px-3 py-2 text-xs font-semibold text-zinc-900 shadow-sm transition-all hover:bg-amber-500 hover:shadow-md active:scale-[0.98]"
+            className="mt-auto inline-flex w-full items-center justify-center rounded-full bg-amber-400 px-3 py-2 text-xs font-semibold text-zinc-900 shadow-sm transition-all hover:bg-amber-500 hover:shadow-md active:scale-[0.98]"
           >
             Buy on Amazon
           </a>
