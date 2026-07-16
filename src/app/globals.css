@@ -68,27 +68,47 @@ body {
    v2 design tokens & animations — boutique/cozy palette
    ========================================================================== */
 :root {
-  --v2-cream: #fff9f5;
-  --v2-cream-2: #fff3ed;
-  --v2-blush: #f3c9d5;
-  --v2-peach: #ffcba4;
-  --v2-salmon: #f7c3b1;
-  --v2-rose: #ffc4c4;
-  --v2-terracotta: #c86b4c;
-  --v2-wood: #8f665b;
-  --v2-sage: #b8c7a8;
-  --v2-plum: #4a2e4f;
-  --v2-plum-soft: #6a4a70;
-  --v2-shadow: 74 46 79;
+  /* Cloud / editorial neutral palette — softer, less saturated */
+  --v2-cream: #f8f4ee;         /* main bg — warm off-white */
+  --v2-cream-2: #efe9df;        /* secondary bg — subtle mist */
+  --v2-paper: #fbf8f3;          /* card bg — near-white with warmth */
+  --v2-fog: #e2dcd0;             /* dividers */
+
+  /* Muted accents — no vivid saturation */
+  --v2-blush: #e8d5d0;           /* soft dusty rose */
+  --v2-peach: #f0d8c0;            /* very muted peach for backgrounds */
+  --v2-sky: #d4dce4;              /* dusty blue */
+  --v2-sage: #ccd4c2;             /* soft sage */
+
+  /* Deep accents */
+  --v2-clay: #a67558;             /* muted terracotta (grown-up) */
+  --v2-wood: #7a5c50;             /* warm text-accent */
+
+  /* Text */
+  --v2-ink: #2b2924;              /* main text — near-black warm */
+  --v2-ink-soft: #6b6560;         /* body copy */
+  --v2-ink-mute: #96908a;         /* caption / meta */
+
+  /* Shadow tint */
+  --v2-shadow: 43 41 36;
+
+  /* Legacy aliases — keep old classes working */
+  --v2-plum: var(--v2-ink);
+  --v2-plum-soft: var(--v2-ink-soft);
+  --v2-terracotta: var(--v2-clay);
+  --v2-salmon: var(--v2-blush);
+  --v2-rose: var(--v2-blush);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    /* v2 stays warm even in dark mode — keeps the cozy vibe */
-    --v2-cream: #1a1214;
-    --v2-cream-2: #221a1c;
-    --v2-plum: #fff3ed;
-    --v2-plum-soft: #f3c9d5;
+    --v2-cream: #1d1b18;
+    --v2-cream-2: #26231f;
+    --v2-paper: #2b2823;
+    --v2-fog: #3b3630;
+    --v2-ink: #f5efe6;
+    --v2-ink-soft: #beb6ab;
+    --v2-ink-mute: #8a827b;
     --v2-shadow: 0 0 0;
   }
 }

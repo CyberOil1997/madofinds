@@ -12,7 +12,7 @@ export function ProductRunway({
   products,
   duration = 60,
   reverse = false,
-  cardWidth = 220,
+  cardWidth = 280,
 }: {
   products: Product[];
   duration?: number;

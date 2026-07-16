@@ -7,7 +7,7 @@ import { VideoModal } from "@/components/VideoModal";
 
 export function CozyProductCard({
   product,
-  width = 220,
+  width = 280,
 }: {
   product: Product;
   width?: number;
@@ -21,7 +21,7 @@ export function CozyProductCard({
   return (
     <>
       <article
-        className="group relative flex shrink-0 flex-col overflow-hidden rounded-3xl border border-white/70 bg-[color:var(--v2-cream)] p-3 shadow-boutique transition-all duration-500 hover:-translate-y-1 hover:rotate-[0.4deg] hover:shadow-boutique-lg"
+        className="group relative flex shrink-0 flex-col overflow-hidden rounded-3xl border border-[color:var(--v2-fog)]/60 bg-[color:var(--v2-paper)] p-4 shadow-boutique transition-all duration-500 hover:-translate-y-1 hover:shadow-boutique-lg"
         style={{ width: `${width}px` }}
       >
         <a
@@ -39,9 +39,9 @@ export function CozyProductCard({
             }
             alt={product.title}
             loading="lazy"
-            className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.06]"
+            className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.04]"
           />
-          <span className="pointer-events-none absolute right-2 top-2 rounded-full bg-white/85 px-2 py-0.5 text-[10px] font-medium text-[color:var(--v2-plum)] shadow-sm backdrop-blur-sm">
+          <span className="pointer-events-none absolute right-2.5 top-2.5 rounded-full bg-white/90 px-2.5 py-1 text-[11px] font-medium text-[color:var(--v2-ink)] shadow-sm backdrop-blur-sm">
             {product.priceRange}
           </span>
         </a>
@@ -53,24 +53,24 @@ export function CozyProductCard({
               setVideoOpen(true);
             }}
             aria-label={`Watch ${product.title} demo`}
-            className="absolute right-4 top-4 z-10 grid h-8 w-8 place-items-center rounded-full bg-[color:var(--v2-plum)] text-[color:var(--v2-cream)] shadow-md ring-2 ring-white/70 transition-transform hover:scale-110"
+            className="absolute left-6 top-6 z-10 grid h-9 w-9 place-items-center rounded-full bg-[color:var(--v2-ink)] text-[color:var(--v2-cream)] shadow-md ring-2 ring-white/80 transition-transform hover:scale-110"
           >
-            <Play className="h-3 w-3 fill-current" aria-hidden />
+            <Play className="h-3.5 w-3.5 fill-current" aria-hidden />
           </button>
         )}
 
-        <div className="mt-3 flex flex-1 flex-col gap-1.5 px-1">
-          <h3 className="line-clamp-2 min-h-[2.6em] font-display text-[13.5px] leading-[1.25] tracking-tight text-[color:var(--v2-plum)]">
+        <div className="mt-4 flex flex-1 flex-col gap-2 px-1 pb-1">
+          <h3 className="font-display line-clamp-2 min-h-[2.7em] text-[15px] leading-[1.3] tracking-tight text-[color:var(--v2-ink)]">
             {product.title}
           </h3>
           <a
             href={product.productUrl}
             target="_blank"
             rel="noopener noreferrer sponsored"
-            className="mt-2 inline-flex items-center justify-between gap-1.5 rounded-full bg-[color:var(--v2-plum)] px-3.5 py-2 text-[11px] font-medium text-[color:var(--v2-cream)] transition-colors hover:bg-[color:var(--v2-terracotta)]"
+            className="mt-2 inline-flex items-center justify-between gap-1.5 rounded-full bg-[color:var(--v2-ink)] px-4 py-2.5 text-[12px] font-medium text-[color:var(--v2-cream)] transition-colors hover:bg-[color:var(--v2-clay)]"
           >
             <span>Shop on Amazon</span>
-            <ArrowUpRight className="h-3 w-3 shrink-0" aria-hidden />
+            <ArrowUpRight className="h-3.5 w-3.5 shrink-0" aria-hidden />
           </a>
         </div>
       </article>

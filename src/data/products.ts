@@ -73,41 +73,73 @@ export function embedUrl(videoId: string): string {
   return `https://www.youtube.com/embed/${videoId}`;
 }
 
+// Curated lifestyle categories. New categories can be added freely — any
+// product with a matching listSlugs entry will appear in that category.
+// Placeholder categories (kids-room, pool-party, game-day) will populate
+// as we source products that fit those themes.
 export const IDEA_LISTS: IdeaList[] = [
   {
-    slug: "under-25-space-savers",
+    slug: "featured-episode",
+    title: "This Week's Video",
+    short: "This Week",
+    description: "The nine finds from our latest short. All linked, all in stock.",
+    accent: "amber",
+  },
+  {
+    slug: "small-kitchen",
+    title: "Small Kitchen",
+    short: "Kitchen",
+    description: "Gadgets and organizers that punch above their counter space.",
+    accent: "rose",
+  },
+  {
+    slug: "home-organization",
+    title: "Home Organization",
+    short: "Organization",
+    description: "Bins, dividers, and drawers that make a place feel bigger.",
+    accent: "emerald",
+  },
+  {
+    slug: "home-improvement",
+    title: "Home Improvement",
+    short: "Improvement",
+    description: "Peel-and-stick, no-drill upgrades that read as intentional.",
+    accent: "sky",
+  },
+  {
+    slug: "dorm-and-studio",
+    title: "Dorm & Studio",
+    short: "Dorm & Studio",
+    description: "Small-space finds for a first apartment or a college move-in.",
+    accent: "amber",
+  },
+  {
+    slug: "cleaning-hacks",
+    title: "Cleaning Hacks",
+    short: "Cleaning",
+    description: "The scrubbers, pastes, and vacuums the internet actually agrees on.",
+    accent: "sky",
+  },
+  {
+    slug: "car-hacks",
+    title: "Car Hacks",
+    short: "Car",
+    description: "Little things that make the daily drive feel less annoying.",
+    accent: "emerald",
+  },
+  {
+    slug: "under-25",
     title: "Under $25",
     short: "Under $25",
     description: "Impulse-buy sweet spot. Everything here ships fast.",
     accent: "amber",
   },
   {
-    slug: "tiny-kitchen-essentials",
-    title: "Kitchen Finds",
-    short: "Kitchen",
-    description: "The gadgets and organizers we can't stop clicking Buy on.",
-    accent: "rose",
-  },
-  {
-    slug: "studio-must-haves",
-    title: "Home & Living",
-    short: "Home",
-    description: "Furniture, storage, and things that just make life easier.",
-    accent: "emerald",
-  },
-  {
-    slug: "renter-friendly-upgrades",
+    slug: "editors-picks",
     title: "Editor's Picks",
     short: "Editor's Picks",
-    description: "The finds worth showing your group chat.",
-    accent: "sky",
-  },
-  {
-    slug: "home-gadgets-that-slap",
-    title: "25 Home Gadgets That Slap",
-    short: "Home Gadgets",
-    description: "The Amazon Finds worth clicking Buy on. All 25 from our latest video.",
-    accent: "amber",
+    description: "The finds we'd recommend to a friend without hedging.",
+    accent: "rose",
   },
 ];
 
@@ -123,7 +155,7 @@ export const PRODUCTS: Product[] = [
     imageUrl: "/product-images/B0CXPY9ZRN.jpg",
     videoId: "",
     videoUrl: "",
-    listSlugs: ["under-25-space-savers", "studio-must-haves"],
+    listSlugs: ["home-organization", "dorm-and-studio", "under-25"],
   },
   {
     id: "ulg-over-door-organizer",
@@ -136,7 +168,7 @@ export const PRODUCTS: Product[] = [
     imageUrl: "/product-images/B09L4R5T55.jpg",
     videoId: "",
     videoUrl: "",
-    listSlugs: ["under-25-space-savers"],
+    listSlugs: ["home-organization", "dorm-and-studio", "under-25"],
   },
   {
     id: "spaceaid-drawer-dividers",
@@ -149,7 +181,7 @@ export const PRODUCTS: Product[] = [
     imageUrl: "/product-images/B094624Q8Z.jpg",
     videoId: "",
     videoUrl: "",
-    listSlugs: ["under-25-space-savers", "tiny-kitchen-essentials"],
+    listSlugs: ["small-kitchen", "home-organization", "under-25"],
   },
 
   {
@@ -163,7 +195,7 @@ export const PRODUCTS: Product[] = [
     imageUrl: "/product-images/B089LLDN39.jpg",
     videoId: "",
     videoUrl: "",
-    listSlugs: ["tiny-kitchen-essentials"],
+    listSlugs: ["small-kitchen", "home-organization"],
   },
   {
     id: "lamu-lazy-susan",
@@ -176,7 +208,7 @@ export const PRODUCTS: Product[] = [
     imageUrl: "/product-images/B0CS3FBC6W.jpg",
     videoId: "",
     videoUrl: "",
-    listSlugs: ["tiny-kitchen-essentials"],
+    listSlugs: ["small-kitchen", "under-25"],
   },
   {
     id: "modern-innovations-knife-strip",
@@ -189,7 +221,7 @@ export const PRODUCTS: Product[] = [
     imageUrl: "/product-images/B016ISHAC8.jpg",
     videoId: "",
     videoUrl: "",
-    listSlugs: ["tiny-kitchen-essentials"],
+    listSlugs: ["small-kitchen", "under-25"],
   },
 
   {
@@ -203,7 +235,7 @@ export const PRODUCTS: Product[] = [
     imageUrl: "/product-images/B07CWKRVV1.jpg",
     videoId: "",
     videoUrl: "",
-    listSlugs: ["studio-must-haves"],
+    listSlugs: ["dorm-and-studio"],
   },
   {
     id: "simple-deluxe-over-toilet",
@@ -216,7 +248,7 @@ export const PRODUCTS: Product[] = [
     imageUrl: "/product-images/B0GX9TGP36.jpg",
     videoId: "",
     videoUrl: "",
-    listSlugs: ["studio-must-haves", "renter-friendly-upgrades"],
+    listSlugs: ["home-organization", "home-improvement"],
   },
   {
     id: "fsobeiialeo-ottoman-cube",
@@ -229,7 +261,7 @@ export const PRODUCTS: Product[] = [
     imageUrl: "/product-images/B07FM3V9QD.jpg",
     videoId: "",
     videoUrl: "",
-    listSlugs: ["under-25-space-savers", "studio-must-haves"],
+    listSlugs: ["dorm-and-studio", "under-25"],
   },
 
   {
@@ -243,7 +275,7 @@ export const PRODUCTS: Product[] = [
     imageUrl: "/product-images/B0BMB2ZRZW.jpg",
     videoId: "",
     videoUrl: "",
-    listSlugs: ["renter-friendly-upgrades", "tiny-kitchen-essentials"],
+    listSlugs: ["home-improvement", "small-kitchen", "editors-picks"],
   },
   {
     id: "ksipze-led-strips",
@@ -256,7 +288,7 @@ export const PRODUCTS: Product[] = [
     imageUrl: "/product-images/B09V366BDY.jpg",
     videoId: "",
     videoUrl: "",
-    listSlugs: ["renter-friendly-upgrades"],
+    listSlugs: ["home-improvement", "dorm-and-studio", "under-25"],
   },
   {
     id: "tic-tac-tiles-wallpaper",
@@ -269,7 +301,7 @@ export const PRODUCTS: Product[] = [
     imageUrl: "/product-images/B07MQVKTT8.jpg",
     videoId: "",
     videoUrl: "",
-    listSlugs: ["renter-friendly-upgrades"],
+    listSlugs: ["home-improvement"],
   },
 
   {
@@ -282,7 +314,7 @@ export const PRODUCTS: Product[] = [
     imageUrl: "/product-images/B00DU5SRIY.jpg",
     videoId: "",
     videoUrl: "",
-    listSlugs: ["home-gadgets-that-slap","under-25-space-savers"],
+    listSlugs: ["cleaning-hacks", "under-25", "editors-picks"],
   },
 
   {
@@ -295,7 +327,7 @@ export const PRODUCTS: Product[] = [
     imageUrl: "/product-images/B0764HS4SL.jpg",
     videoId: "",
     videoUrl: "",
-    listSlugs: ["home-gadgets-that-slap","tiny-kitchen-essentials"],
+    listSlugs: ["small-kitchen", "editors-picks"],
   },
 
   {
@@ -308,7 +340,7 @@ export const PRODUCTS: Product[] = [
     imageUrl: "/product-images/B006LXOJC0.jpg",
     videoId: "",
     videoUrl: "",
-    listSlugs: ["home-gadgets-that-slap","studio-must-haves"],
+    listSlugs: ["cleaning-hacks"],
   },
 
   {
@@ -321,7 +353,7 @@ export const PRODUCTS: Product[] = [
     imageUrl: "/product-images/B00BYH6C1E.jpg",
     videoId: "",
     videoUrl: "",
-    listSlugs: ["home-gadgets-that-slap","studio-must-haves"],
+    listSlugs: ["car-hacks"],
   },
 
   {
@@ -334,7 +366,7 @@ export const PRODUCTS: Product[] = [
     imageUrl: "/product-images/B07VCBQ6KF.jpg",
     videoId: "",
     videoUrl: "",
-    listSlugs: ["home-gadgets-that-slap","under-25-space-savers"],
+    listSlugs: ["car-hacks", "cleaning-hacks", "under-25"],
   },
 
   {
@@ -347,7 +379,7 @@ export const PRODUCTS: Product[] = [
     imageUrl: "/product-images/B00BAGTNAQ.jpg",
     videoId: "",
     videoUrl: "",
-    listSlugs: ["home-gadgets-that-slap"],
+    listSlugs: ["cleaning-hacks", "editors-picks"],
   },
 
   {
@@ -360,7 +392,7 @@ export const PRODUCTS: Product[] = [
     imageUrl: "/product-images/B09BKKLSV6.jpg",
     videoId: "",
     videoUrl: "",
-    listSlugs: ["home-gadgets-that-slap","studio-must-haves"],
+    listSlugs: ["home-improvement", "dorm-and-studio", "under-25"],
   },
 
   {
@@ -373,7 +405,7 @@ export const PRODUCTS: Product[] = [
     imageUrl: "/product-images/B018W9JII0.jpg",
     videoId: "",
     videoUrl: "",
-    listSlugs: ["home-gadgets-that-slap","tiny-kitchen-essentials"],
+    listSlugs: ["small-kitchen", "under-25"],
   },
 
   {
@@ -386,7 +418,7 @@ export const PRODUCTS: Product[] = [
     imageUrl: "/product-images/B086VKVKNN.jpg",
     videoId: "",
     videoUrl: "",
-    listSlugs: ["home-gadgets-that-slap","tiny-kitchen-essentials"],
+    listSlugs: ["small-kitchen"],
   },
 
   {
@@ -399,7 +431,7 @@ export const PRODUCTS: Product[] = [
     imageUrl: "/product-images/B08FXTTCJX.jpg",
     videoId: "",
     videoUrl: "",
-    listSlugs: ["home-gadgets-that-slap","studio-must-haves"],
+    listSlugs: ["home-improvement", "under-25"],
   },
 
   {
@@ -412,7 +444,7 @@ export const PRODUCTS: Product[] = [
     imageUrl: "/product-images/B09CRN1MM1.jpg",
     videoId: "",
     videoUrl: "",
-    listSlugs: ["home-gadgets-that-slap"],
+    listSlugs: ["small-kitchen", "under-25"],
   },
 
   {
@@ -425,7 +457,7 @@ export const PRODUCTS: Product[] = [
     imageUrl: "/product-images/B075X1KPLZ.jpg",
     videoId: "",
     videoUrl: "",
-    listSlugs: ["home-gadgets-that-slap","tiny-kitchen-essentials"],
+    listSlugs: ["small-kitchen", "editors-picks"],
   },
 
   {
@@ -438,7 +470,7 @@ export const PRODUCTS: Product[] = [
     imageUrl: "/product-images/B08196DX71.jpg",
     videoId: "",
     videoUrl: "",
-    listSlugs: ["home-gadgets-that-slap","tiny-kitchen-essentials"],
+    listSlugs: ["small-kitchen", "under-25"],
   },
 
   {
@@ -451,7 +483,7 @@ export const PRODUCTS: Product[] = [
     imageUrl: "/product-images/B07G2WW21S.jpg",
     videoId: "",
     videoUrl: "",
-    listSlugs: ["home-gadgets-that-slap","tiny-kitchen-essentials"],
+    listSlugs: ["small-kitchen", "under-25"],
   },
 
   {
@@ -464,7 +496,7 @@ export const PRODUCTS: Product[] = [
     imageUrl: "/product-images/B00LRKMK96.jpg",
     videoId: "",
     videoUrl: "",
-    listSlugs: ["home-gadgets-that-slap","tiny-kitchen-essentials"],
+    listSlugs: ["small-kitchen", "under-25"],
   },
 
   {
@@ -477,7 +509,7 @@ export const PRODUCTS: Product[] = [
     imageUrl: "/product-images/B01JG57JJ4.jpg",
     videoId: "qLQAF9Az-KE",
     videoUrl: "https://www.youtube.com/shorts/qLQAF9Az-KE",
-    listSlugs: ["home-gadgets-that-slap","tiny-kitchen-essentials"],
+    listSlugs: ["featured-episode", "small-kitchen"],
   },
 
   {
@@ -490,7 +522,7 @@ export const PRODUCTS: Product[] = [
     imageUrl: "/product-images/B01M6VCIVK.jpg",
     videoId: "",
     videoUrl: "",
-    listSlugs: ["home-gadgets-that-slap","studio-must-haves"],
+    listSlugs: ["small-kitchen", "under-25"],
   },
 
   {
@@ -503,7 +535,7 @@ export const PRODUCTS: Product[] = [
     imageUrl: "/product-images/B08KPXYXZF.jpg",
     videoId: "",
     videoUrl: "",
-    listSlugs: ["home-gadgets-that-slap","tiny-kitchen-essentials"],
+    listSlugs: ["small-kitchen", "under-25"],
   },
 
   {
@@ -516,7 +548,7 @@ export const PRODUCTS: Product[] = [
     imageUrl: "/product-images/B002XOHZWC.jpg",
     videoId: "",
     videoUrl: "",
-    listSlugs: ["home-gadgets-that-slap","tiny-kitchen-essentials"],
+    listSlugs: ["small-kitchen", "under-25"],
   },
 
   {
@@ -529,7 +561,7 @@ export const PRODUCTS: Product[] = [
     imageUrl: "/product-images/B01J4ADMI8.jpg",
     videoId: "qLQAF9Az-KE",
     videoUrl: "https://www.youtube.com/shorts/qLQAF9Az-KE",
-    listSlugs: ["home-gadgets-that-slap","tiny-kitchen-essentials"],
+    listSlugs: ["featured-episode", "small-kitchen", "editors-picks"],
   },
 
   {
@@ -542,7 +574,7 @@ export const PRODUCTS: Product[] = [
     imageUrl: "/product-images/B00ERE2RLK.jpg",
     videoId: "",
     videoUrl: "",
-    listSlugs: ["home-gadgets-that-slap","tiny-kitchen-essentials"],
+    listSlugs: ["small-kitchen"],
   },
 
   {
@@ -555,7 +587,7 @@ export const PRODUCTS: Product[] = [
     imageUrl: "/product-images/B06XCCQHWC.jpg",
     videoId: "",
     videoUrl: "",
-    listSlugs: ["home-gadgets-that-slap","tiny-kitchen-essentials"],
+    listSlugs: ["small-kitchen", "under-25"],
   },
 
   {
@@ -568,7 +600,7 @@ export const PRODUCTS: Product[] = [
     imageUrl: "/product-images/B07YF3JB32.jpg",
     videoId: "",
     videoUrl: "",
-    listSlugs: ["home-gadgets-that-slap","tiny-kitchen-essentials"],
+    listSlugs: ["small-kitchen", "under-25"],
   },
 
   {
@@ -581,7 +613,7 @@ export const PRODUCTS: Product[] = [
     imageUrl: "/product-images/B08BYJX8HJ.jpg",
     videoId: "",
     videoUrl: "",
-    listSlugs: ["home-gadgets-that-slap","studio-must-haves"],
+    listSlugs: ["small-kitchen", "home-organization"],
   },
 
   {
@@ -594,7 +626,7 @@ export const PRODUCTS: Product[] = [
     imageUrl: "/product-images/B0020VFM3C.jpg",
     videoId: "",
     videoUrl: "",
-    listSlugs: ["home-gadgets-that-slap","tiny-kitchen-essentials"],
+    listSlugs: ["small-kitchen", "under-25"],
   },
 
   {
@@ -607,7 +639,7 @@ export const PRODUCTS: Product[] = [
     imageUrl: "/product-images/B01MT0UL8N.jpg",
     videoId: "qLQAF9Az-KE",
     videoUrl: "https://www.youtube.com/shorts/qLQAF9Az-KE",
-    listSlugs: ["home-gadgets-that-slap"],
+    listSlugs: ["featured-episode", "small-kitchen"],
   },
 
   {
@@ -620,7 +652,7 @@ export const PRODUCTS: Product[] = [
     imageUrl: "/product-images/B0BP7DJ972.jpg",
     videoId: "qLQAF9Az-KE",
     videoUrl: "https://www.youtube.com/shorts/qLQAF9Az-KE",
-    listSlugs: ["home-gadgets-that-slap"],
+    listSlugs: ["featured-episode", "home-improvement"],
   },
 
   {
@@ -633,7 +665,7 @@ export const PRODUCTS: Product[] = [
     imageUrl: "/product-images/B0BSKQW2T2.jpg",
     videoId: "qLQAF9Az-KE",
     videoUrl: "https://www.youtube.com/shorts/qLQAF9Az-KE",
-    listSlugs: ["home-gadgets-that-slap"],
+    listSlugs: ["featured-episode", "small-kitchen", "home-improvement"],
   },
 
   {
@@ -646,7 +678,7 @@ export const PRODUCTS: Product[] = [
     imageUrl: "/product-images/B089SNZD4N.jpg",
     videoId: "qLQAF9Az-KE",
     videoUrl: "https://www.youtube.com/shorts/qLQAF9Az-KE",
-    listSlugs: ["home-gadgets-that-slap"],
+    listSlugs: ["featured-episode", "small-kitchen"],
   },
 
   {
@@ -659,7 +691,7 @@ export const PRODUCTS: Product[] = [
     imageUrl: "/product-images/B0DPCTTT18.jpg",
     videoId: "qLQAF9Az-KE",
     videoUrl: "https://www.youtube.com/shorts/qLQAF9Az-KE",
-    listSlugs: ["home-gadgets-that-slap"],
+    listSlugs: ["featured-episode", "small-kitchen"],
   },
 
   {
@@ -672,7 +704,7 @@ export const PRODUCTS: Product[] = [
     imageUrl: "/product-images/B0FQHTP1J4.jpg",
     videoId: "qLQAF9Az-KE",
     videoUrl: "https://www.youtube.com/shorts/qLQAF9Az-KE",
-    listSlugs: ["home-gadgets-that-slap"],
+    listSlugs: ["featured-episode", "small-kitchen"],
   },
 
   {
@@ -685,7 +717,7 @@ export const PRODUCTS: Product[] = [
     imageUrl: "/product-images/B0DRV3874K.jpg",
     videoId: "qLQAF9Az-KE",
     videoUrl: "https://www.youtube.com/shorts/qLQAF9Az-KE",
-    listSlugs: ["home-gadgets-that-slap"],
+    listSlugs: ["featured-episode", "small-kitchen", "editors-picks"],
   },
 ];
 

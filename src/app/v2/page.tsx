@@ -8,12 +8,12 @@ import { BookmarkCTA } from "@/components/v2/BookmarkCTA";
 import { PRODUCTS } from "@/data/products";
 
 export const metadata: Metadata = {
-  title: "Mado Finds — your happy place for Amazon finds",
+  title: "Mado Finds — Amazon finds, worth buying.",
   description:
-    "A quiet little corner of the internet, thoughtfully stocked with the Amazon finds we can't stop thinking about.",
+    "A curated shop of Amazon finds we've tested, kept, and would buy again. Browse by kitchen, dorm, cleaning hacks, or the whole shelf.",
 };
 
-// Shuffle deterministically so the runway feels curated, not sequential
+// Deterministic shuffle so the runway feels curated, not sequential
 function seededOrder<T>(arr: T[], seed: number): T[] {
   const out = [...arr];
   let s = seed;
@@ -26,78 +26,44 @@ function seededOrder<T>(arr: T[], seed: number): T[] {
 }
 
 export default function V2Home() {
-  const runway1 = seededOrder(PRODUCTS, 7);
-  const runway2 = seededOrder(PRODUCTS, 13);
+  const runway = seededOrder(PRODUCTS, 7);
 
   return (
-    <div className="min-h-screen bg-[color:var(--v2-cream)] font-sans text-[color:var(--v2-plum)]">
+    <div className="min-h-screen bg-[color:var(--v2-cream)] font-sans text-[color:var(--v2-ink)]">
       <HeaderV2 />
       <main>
         <HeroV2 />
 
-        {/* Runway 1 — this week's obsessions */}
-        <section className="bg-[color:var(--v2-cream)] pb-8">
-          <div className="mx-auto max-w-6xl px-6 pb-6">
-            <div className="flex items-end justify-between">
+        {/* One clean runway, larger cards */}
+        <section className="bg-[color:var(--v2-cream)] pb-16">
+          <div className="mx-auto max-w-6xl px-6 pb-8">
+            <div className="flex items-end justify-between gap-6">
               <div>
-                <span className="text-[11px] font-semibold uppercase tracking-[0.24em] text-[color:var(--v2-terracotta)]">
-                  the runway
+                <span className="text-[11px] font-semibold uppercase tracking-[0.24em] text-[color:var(--v2-clay)]">
+                  The shelf
                 </span>
                 <h2
-                  className="font-display mt-2 text-3xl leading-tight tracking-tight text-[color:var(--v2-plum)] sm:text-4xl"
+                  className="font-display mt-2 text-3xl leading-tight tracking-tight text-[color:var(--v2-ink)] sm:text-4xl"
                   style={{ fontVariationSettings: '"opsz" 72, "SOFT" 100, "wght" 500' }}
                 >
-                  drifting by, on{" "}
-                  <em
-                    className="text-[color:var(--v2-terracotta)]"
-                    style={{ fontVariationSettings: '"opsz" 72, "SOFT" 100, "wght" 400' }}
-                  >
-                    repeat
-                  </em>
+                  Everything, at a glance.
                 </h2>
               </div>
-              <p className="hidden max-w-xs text-right text-xs italic text-[color:var(--v2-plum-soft)] sm:block">
-                hover to pause, tap to shop
+              <p className="hidden max-w-xs text-right text-xs text-[color:var(--v2-ink-mute)] sm:block">
+                Hover to pause. Tap any card to buy on Amazon.
               </p>
             </div>
           </div>
-          <ProductRunway products={runway1} duration={80} cardWidth={210} />
+          <ProductRunway products={runway} duration={90} cardWidth={280} />
         </section>
 
         {/* Featured video */}
         <VideoSpotlight />
 
-        {/* Runway 2 — going the other way */}
-        <section className="bg-[color:var(--v2-cream)] py-10">
-          <div className="mx-auto max-w-6xl px-6 pb-6">
-            <span className="text-[11px] font-semibold uppercase tracking-[0.24em] text-[color:var(--v2-terracotta)]">
-              more little joys
-            </span>
-            <h2
-              className="font-display mt-2 text-3xl leading-tight tracking-tight text-[color:var(--v2-plum)] sm:text-4xl"
-              style={{ fontVariationSettings: '"opsz" 72, "SOFT" 100, "wght" 500' }}
-            >
-              a second lap, going{" "}
-              <em
-                className="text-[color:var(--v2-terracotta)]"
-                style={{ fontVariationSettings: '"opsz" 72, "SOFT" 100, "wght" 400' }}
-              >
-                the other way
-              </em>
-            </h2>
-          </div>
-          <ProductRunway
-            products={runway2}
-            duration={95}
-            reverse
-            cardWidth={200}
-          />
-        </section>
-
         {/* Curated collections */}
         <CollectionShowcase />
 
-        {/* Bookmark CTA */}
+        {/* Follow / CTA */}
         <BookmarkCTA />
       </main>
     </div>
