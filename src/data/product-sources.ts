@@ -60,6 +60,17 @@ export const PRODUCT_SOURCES: Record<string, SourceVideo> = {
   "B08112XB28": { url: "https://www.youtube.com/shorts/MWkIhrE270M", type: "youtube-shorts", creator: "Sam Findz", segmentIds: [17, 18], notes: "Ceptics universal travel adapter" },
   "B0F6Y386KK": { url: "https://www.youtube.com/shorts/MWkIhrE270M", type: "youtube-shorts", creator: "Sam Findz", segmentIds: [21], notes: "Bamboo foldable lap desk (swap-in — Sam Findz seg is 'Portable Desk')" },
   "B0BMYD1TZF": { url: "https://www.youtube.com/shorts/MWkIhrE270M", type: "youtube-shorts", creator: "Sam Findz", segmentIds: [6], notes: "Butter slicer" },
+
+  // ===== Episode 3 (v11 outdoor/kitchen/office) — sourced from Sam Findz mEmqAEdISm0 =====
+  "B083NHRGP3": { url: "https://www.youtube.com/shorts/mEmqAEdISm0", type: "youtube-shorts", creator: "Sam Findz", segmentIds: [4], notes: "Solar Lights — ep3" },
+  "B0018RSEMU": { url: "https://www.youtube.com/shorts/mEmqAEdISm0", type: "youtube-shorts", creator: "Sam Findz", segmentIds: [3], notes: "Knife Sharpener — ep3" },
+  "B0GF1V16L4": { url: "https://www.youtube.com/shorts/mEmqAEdISm0", type: "youtube-shorts", creator: "Sam Findz", segmentIds: [6], notes: "Floor Scrubber — ep3" },
+  "B0BQ5M9MRN": { url: "https://www.youtube.com/shorts/mEmqAEdISm0", type: "youtube-shorts", creator: "Sam Findz", segmentIds: [13], notes: "Mini Fridge — ep3" },
+  "B0BGZG7W8D": { url: "https://www.youtube.com/shorts/mEmqAEdISm0", type: "youtube-shorts", creator: "Sam Findz", segmentIds: [10], notes: "Standing Desk — ep3" },
+  "B0DZ6VRPT7": { url: "https://www.youtube.com/shorts/mEmqAEdISm0", type: "youtube-shorts", creator: "Sam Findz", segmentIds: [8], notes: "Tower Fan — ep3" },
+  "B0FJRSG8VL": { url: "https://www.youtube.com/shorts/mEmqAEdISm0", type: "youtube-shorts", creator: "Sam Findz", segmentIds: [20], notes: "Pop-Up Outlet — ep3" },
+  "B078VFPMNS": { url: "https://www.youtube.com/shorts/mEmqAEdISm0", type: "youtube-shorts", creator: "Sam Findz", segmentIds: [19], notes: "Bean Bag — ep3" },
+  "B010TCP3SC": { url: "https://www.youtube.com/shorts/mEmqAEdISm0", type: "youtube-shorts", creator: "Sam Findz", segmentIds: [11], notes: "Waffle Maker — ep3" },
 };
 
 /**
@@ -102,6 +113,23 @@ export const EPISODES: EpisodeInfo[] = [
       "B08112XB28",  // #7 Universal Travel Adapter
       "B0F6Y386KK",  // #8 Bamboo Lap Desk
       "B0BMYD1TZF",  // #9 Butter Slicer
+    ],
+  },
+  {
+    slug: "ep3-v11-samref",
+    ytVideoId: "",  // TBD after upload
+    title: "9 Amazon Finds That Feel Like Cheating 🤯",
+    publishedAt: "2026-07-17",
+    productAsins: [
+      "B083NHRGP3",  // Solar Lights
+      "B0018RSEMU",  // Knife Sharpener
+      "B0GF1V16L4",  // Floor Scrubber
+      "B0BQ5M9MRN",  // Mini Fridge
+      "B0BGZG7W8D",  // Standing Desk
+      "B0DZ6VRPT7",  // Tower Fan
+      "B0FJRSG8VL",  // Pop-Up Outlet
+      "B078VFPMNS",  // Bean Bag
+      "B010TCP3SC",  // Waffle Maker
     ],
   },
 ];
