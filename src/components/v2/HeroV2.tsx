@@ -23,21 +23,11 @@ export function HeroV2() {
       </div>
 
       <div className="relative mx-auto max-w-3xl px-6 text-center">
-        <motion.div
-          initial={{ opacity: 0, y: -6 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, ease: easeOutSoft }}
-          className="mx-auto inline-flex items-center gap-2 rounded-full border border-[color:var(--v2-fog)]/80 bg-white/70 px-4 py-1.5 text-[11px] font-medium uppercase tracking-[0.22em] text-[color:var(--v2-wood)] shadow-boutique backdrop-blur-md"
-        >
-          <span className="h-1.5 w-1.5 rounded-full bg-[color:var(--v2-clay)]" />
-          <span>New finds every week</span>
-        </motion.div>
-
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.1, ease: easeOutSoft }}
-          className="font-display mt-7 text-5xl leading-[1.02] tracking-tight text-[color:var(--v2-ink)] sm:text-7xl"
+          transition={{ duration: 0.8, ease: easeOutSoft }}
+          className="font-display text-5xl leading-[1.02] tracking-tight text-[color:var(--v2-ink)] sm:text-7xl"
           style={{ fontVariationSettings: '"opsz" 144, "SOFT" 100, "wght" 500' }}
         >
           Amazon finds,{" "}

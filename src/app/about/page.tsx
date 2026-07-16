@@ -1,94 +1,98 @@
-import { Header } from "@/components/Header";
-import { Footer } from "@/components/Footer";
 import type { Metadata } from "next";
-import { Target, FlaskConical, Play, Users } from "lucide-react";
+import { HeaderV2 } from "@/components/v2/HeaderV2";
 
 export const metadata: Metadata = {
   title: "About — Mado Finds",
   description:
-    "Mado Finds curates the best of Amazon into a scrollable feed. Every recommendation is hand-picked and worth the click.",
+    "Mado Finds curates the best of Amazon into a scrollable shop. Every recommendation is one we would buy for ourselves.",
 };
 
 const cards = [
   {
-    icon: Target,
     title: "What we cover",
     body:
-      "Kitchen, home, gadgets, editor's picks — whatever's worth the click on Amazon that week. Grouped into scrollable lists you can shop in seconds.",
+      "Small kitchen, home organization, dorm & studio, cleaning hacks, home improvement — grouped so you can jump straight to what you need.",
   },
   {
-    icon: FlaskConical,
     title: "How we pick",
     body:
-      "Every product is one we would buy for ourselves. We prioritize genuine reviews, honest price ranges, and things people actually love using.",
+      "Every product is one we would buy for ourselves. We prioritize honest price ranges, genuine reviews, and things people actually love using.",
   },
   {
-    icon: Play,
     title: "YouTube & TikTok",
     body:
-      "We show these products in action on YouTube Shorts and TikTok. See something you love in a video? The full list lives on the homepage.",
+      "We show these finds in action on YouTube Shorts and TikTok. Saw something you liked in a video? The full list lives on the homepage.",
   },
   {
-    icon: Users,
     title: "Who we are",
     body:
-      "Mado Finds is a project by Mado Digital, a two-person indie studio building small, useful things on the internet.",
+      "Mado Finds is a project by Mado Digital, a small studio building useful little things on the internet.",
   },
 ];
 
 export default function AboutPage() {
   return (
-    <>
-      <Header />
-      <main className="flex-1">
-        <div className="relative overflow-hidden border-b border-zinc-200/70 bg-gradient-to-b from-amber-50/70 via-white to-white dark:border-zinc-800/70 dark:from-amber-950/20 dark:via-zinc-950 dark:to-zinc-950">
-          <div
-            className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_60%_50%_at_50%_0%,rgba(251,191,36,0.15),transparent_70%)]"
-            aria-hidden
-          />
-          <div className="relative mx-auto max-w-3xl px-5 py-20 sm:px-8 sm:py-28">
-            <span className="inline-flex items-center gap-2 rounded-full border border-amber-200/80 bg-white/60 px-3 py-1.5 text-xs font-medium text-amber-800 shadow-sm backdrop-blur-sm dark:border-amber-800/60 dark:bg-zinc-950/40 dark:text-amber-300">
-              About Mado Finds
+    <div className="min-h-screen bg-[color:var(--v2-cream)] font-sans text-[color:var(--v2-ink)]">
+      <HeaderV2 />
+      <main>
+        <section className="relative overflow-hidden bg-[color:var(--v2-cream)] pt-20 pb-16 sm:pt-28 sm:pb-24">
+          <div className="pointer-events-none absolute inset-0 overflow-hidden" aria-hidden>
+            <div
+              className="blob-a absolute -top-32 -left-20 h-96 w-96 rounded-full opacity-50 blur-3xl"
+              style={{ background: "radial-gradient(circle at 30% 30%, var(--v2-blush), transparent 70%)" }}
+            />
+            <div
+              className="blob-b absolute -top-20 right-[-10rem] h-[28rem] w-[28rem] rounded-full opacity-40 blur-3xl"
+              style={{ background: "radial-gradient(circle at 60% 40%, var(--v2-peach), transparent 70%)" }}
+            />
+          </div>
+
+          <div className="relative mx-auto max-w-3xl px-6 text-center">
+            <span className="text-[11px] font-semibold uppercase tracking-[0.24em] text-[color:var(--v2-clay)]">
+              About
             </span>
-            <h1 className="mt-6 text-balance text-4xl font-bold tracking-tight text-zinc-900 sm:text-5xl md:text-6xl dark:text-zinc-50">
-              A shoppable feed of Amazon finds.
+            <h1
+              className="font-display mt-4 text-5xl leading-[1.02] tracking-tight text-[color:var(--v2-ink)] sm:text-6xl"
+              style={{ fontVariationSettings: '"opsz" 144, "SOFT" 100, "wght" 500' }}
+            >
+              A shoppable shelf of{" "}
+              <em
+                className="text-[color:var(--v2-clay)]"
+                style={{ fontVariationSettings: '"opsz" 144, "SOFT" 100, "wght" 400' }}
+              >
+                Amazon finds.
+              </em>
             </h1>
-            <p className="mt-6 text-pretty text-lg leading-relaxed text-zinc-600 sm:text-xl dark:text-zinc-300">
-              We spend the time so you don't have to. Every product on the site
-              is one we'd buy for ourselves, priced right, and worth clicking
-              through to.
+            <p className="mx-auto mt-6 max-w-xl text-base leading-relaxed text-[color:var(--v2-ink-soft)] sm:text-lg">
+              We spend the time so you don&apos;t have to. Every product on the
+              site is one we&apos;d buy for ourselves, priced right, and worth
+              clicking through to.
             </p>
           </div>
-        </div>
+        </section>
 
-        <div className="mx-auto max-w-4xl px-5 py-16 sm:px-8 sm:py-24">
+        <section className="mx-auto max-w-4xl px-6 py-16 sm:py-24">
           <div className="grid gap-5 sm:grid-cols-2 sm:gap-6">
-            {cards.map((card, i) => {
-              const Icon = card.icon;
-              return (
-                <div
-                  key={i}
-                  className="rounded-2xl border border-zinc-200/80 bg-white p-6 shadow-sm shadow-zinc-900/[0.02] transition-all hover:-translate-y-0.5 hover:shadow-md hover:shadow-zinc-900/5 dark:border-zinc-800/80 dark:bg-zinc-900 dark:hover:shadow-black/40"
-                >
-                  <span className="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-amber-100 to-orange-100 text-amber-700 dark:from-amber-950/40 dark:to-orange-950/40 dark:text-amber-300">
-                    <Icon className="h-5 w-5" aria-hidden />
-                  </span>
-                  <h2 className="text-lg font-semibold text-zinc-900 dark:text-zinc-50">
-                    {card.title}
-                  </h2>
-                  <p className="mt-2 text-sm leading-relaxed text-zinc-600 dark:text-zinc-400">
-                    {card.body}
-                  </p>
-                </div>
-              );
-            })}
+            {cards.map((card, i) => (
+              <div
+                key={i}
+                className="rounded-3xl border border-[color:var(--v2-fog)]/60 bg-[color:var(--v2-paper)] p-6 shadow-boutique transition-all hover:-translate-y-0.5 hover:shadow-boutique-lg"
+              >
+                <h2 className="font-display text-lg text-[color:var(--v2-ink)]">
+                  {card.title}
+                </h2>
+                <p className="mt-3 text-sm leading-relaxed text-[color:var(--v2-ink-soft)]">
+                  {card.body}
+                </p>
+              </div>
+            ))}
           </div>
 
-          <div className="mt-12 rounded-2xl border border-zinc-200/80 bg-zinc-50 p-6 sm:p-8 dark:border-zinc-800/80 dark:bg-zinc-900/40">
-            <h2 className="text-lg font-semibold text-zinc-900 dark:text-zinc-50">
+          <div className="mt-12 rounded-3xl border border-[color:var(--v2-fog)]/60 bg-[color:var(--v2-cream-2)] p-6 sm:p-8">
+            <h2 className="font-display text-lg text-[color:var(--v2-ink)]">
               Affiliate disclosure
             </h2>
-            <p className="mt-3 text-sm leading-relaxed text-zinc-600 dark:text-zinc-400">
+            <p className="mt-3 text-sm leading-relaxed text-[color:var(--v2-ink-soft)]">
               Mado Finds participates in the Amazon Services LLC Associates
               Program, an affiliate advertising program designed to provide a
               means for sites to earn advertising fees by advertising and
@@ -99,9 +103,8 @@ export default function AboutPage() {
               not buy it ourselves, it does not go on the site.
             </p>
           </div>
-        </div>
+        </section>
       </main>
-      <Footer />
-    </>
+    </div>
   );
 }

@@ -25,12 +25,12 @@ export function BookmarkCTA() {
           className="font-display text-4xl leading-[1.05] tracking-tight text-[color:var(--v2-ink)] sm:text-5xl"
           style={{ fontVariationSettings: '"opsz" 96, "SOFT" 100, "wght" 500' }}
         >
-          A new short every{" "}
+          See it{" "}
           <em
             className="text-[color:var(--v2-clay)]"
             style={{ fontVariationSettings: '"opsz" 96, "SOFT" 100, "wght" 400' }}
           >
-            week.
+            in action.
           </em>
         </motion.h2>
 
@@ -41,8 +41,8 @@ export function BookmarkCTA() {
           transition={{ duration: 0.6, ease: easeOutSoft, delay: 0.15 }}
           className="mx-auto mt-5 max-w-md text-[color:var(--v2-ink-soft)]"
         >
-          Nine finds, one rundown, always something clever. Follow along and
-          shop the whole list right here.
+          Follow along on YouTube and TikTok to watch these finds in the wild,
+          then shop the whole list right here.
         </motion.p>
 
         <motion.div
