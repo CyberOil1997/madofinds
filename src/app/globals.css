@@ -63,3 +63,87 @@ body {
 .no-scrollbar {
   scrollbar-width: none;
 }
+
+/* ==========================================================================
+   v2 design tokens & animations — boutique/cozy palette
+   ========================================================================== */
+:root {
+  --v2-cream: #fff9f5;
+  --v2-cream-2: #fff3ed;
+  --v2-blush: #f3c9d5;
+  --v2-peach: #ffcba4;
+  --v2-salmon: #f7c3b1;
+  --v2-rose: #ffc4c4;
+  --v2-terracotta: #c86b4c;
+  --v2-wood: #8f665b;
+  --v2-sage: #b8c7a8;
+  --v2-plum: #4a2e4f;
+  --v2-plum-soft: #6a4a70;
+  --v2-shadow: 74 46 79;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* v2 stays warm even in dark mode — keeps the cozy vibe */
+    --v2-cream: #1a1214;
+    --v2-cream-2: #221a1c;
+    --v2-plum: #fff3ed;
+    --v2-plum-soft: #f3c9d5;
+    --v2-shadow: 0 0 0;
+  }
+}
+
+/* Continuous marquee — duplicate content in the DOM, translate -50% */
+@keyframes marquee-x {
+  from { transform: translate3d(0, 0, 0); }
+  to   { transform: translate3d(-50%, 0, 0); }
+}
+
+.marquee-track {
+  animation: marquee-x var(--marquee-duration, 45s) linear infinite;
+  will-change: transform;
+}
+.marquee-track:hover,
+.marquee-track:focus-within {
+  animation-play-state: paused;
+}
+
+/* Reverse direction row */
+.marquee-track.reverse {
+  animation-direction: reverse;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track { animation: none; }
+}
+
+/* Floating blob keyframes for hero */
+@keyframes float-slow {
+  0%, 100% { transform: translate(0, 0) rotate(0deg); }
+  33%      { transform: translate(20px, -30px) rotate(6deg); }
+  66%      { transform: translate(-15px, 20px) rotate(-4deg); }
+}
+.blob-a { animation: float-slow 18s ease-in-out infinite; }
+.blob-b { animation: float-slow 24s ease-in-out infinite reverse; }
+.blob-c { animation: float-slow 21s ease-in-out infinite 3s; }
+
+/* Serif ligature helper */
+.font-display {
+  font-family: var(--font-fraunces, Georgia, serif);
+  font-optical-sizing: auto;
+  font-feature-settings: "liga" 1, "dlig" 1, "ss01" 1;
+}
+
+/* Warm shadow utility */
+.shadow-boutique {
+  box-shadow:
+    0 1px 2px rgba(var(--v2-shadow), 0.04),
+    0 8px 24px -6px rgba(var(--v2-shadow), 0.08),
+    0 30px 60px -30px rgba(var(--v2-shadow), 0.16);
+}
+.shadow-boutique-lg {
+  box-shadow:
+    0 2px 4px rgba(var(--v2-shadow), 0.05),
+    0 12px 40px -12px rgba(var(--v2-shadow), 0.12),
+    0 40px 80px -40px rgba(var(--v2-shadow), 0.22);
+}

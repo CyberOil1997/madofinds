@@ -29,6 +29,12 @@ export function Header() {
           >
             About
           </Link>
+          <Link
+            href="/v2"
+            className="rounded-lg px-3 py-1.5 text-amber-700 transition-colors hover:bg-amber-50 hover:text-amber-900 dark:text-amber-400 dark:hover:bg-amber-950/40"
+          >
+            Preview&nbsp;v2 ✨
+          </Link>
           <a
             href="https://youtube.com"
             target="_blank"
