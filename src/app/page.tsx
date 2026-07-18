@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { HeaderV2 } from "@/components/v2/HeaderV2";
 import { HeroV2 } from "@/components/v2/HeroV2";
-import { ProductRunway } from "@/components/v2/ProductRunway";
+import { ShelfSearch } from "@/components/v2/ShelfSearch";
 import { NowOnVideo } from "@/components/v2/NowOnVideo";
 import { CollectionShowcase } from "@/components/v2/CollectionShowcase";
 import { BookmarkCTA } from "@/components/v2/BookmarkCTA";
@@ -33,27 +33,7 @@ export default function Home() {
       <main>
         <HeroV2 />
 
-        <section className="bg-[color:var(--v2-cream)] pb-16">
-          <div className="mx-auto max-w-6xl px-6 pb-8">
-            <div className="flex items-end justify-between gap-6">
-              <div>
-                <span className="text-[11px] font-semibold uppercase tracking-[0.24em] text-[color:var(--v2-clay)]">
-                  The shelf
-                </span>
-                <h2
-                  className="font-display mt-2 text-3xl leading-tight tracking-tight text-[color:var(--v2-ink)] sm:text-4xl"
-                  style={{ fontVariationSettings: '"opsz" 72, "SOFT" 100, "wght" 500' }}
-                >
-                  Everything, at a glance.
-                </h2>
-              </div>
-              <p className="hidden max-w-xs text-right text-xs text-[color:var(--v2-ink-mute)] sm:block">
-                Hover to pause. Tap any card to buy on Amazon.
-              </p>
-            </div>
-          </div>
-          <ProductRunway products={runway} duration={90} cardWidth={280} />
-        </section>
+        <ShelfSearch runway={runway} />
 
         <NowOnVideo />
         <CollectionShowcase />
