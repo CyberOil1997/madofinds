@@ -6,10 +6,14 @@ import { PRODUCTS, type Product } from "./products";
 
 export type EpisodeWithProducts = EpisodeInfo & { products: Product[] };
 
-/** Published episodes (those with a real YouTube id), newest first, each with
- *  its products resolved in the order they appear in the video. */
+/** Today as YYYY-MM-DD. Episodes scheduled for a future date are held back so
+ *  the feed never renders an embed for a video that isn't public yet. */
+const TODAY = new Date().toISOString().slice(0, 10);
+
+/** Published episodes (real YouTube id AND publish date reached), newest first,
+ *  each with its products resolved in the order they appear in the video. */
 export const EPISODE_FEED: EpisodeWithProducts[] = EPISODES.filter(
-  (e) => e.ytVideoId && e.ytVideoId.length > 0,
+  (e) => e.ytVideoId && e.ytVideoId.length > 0 && e.publishedAt <= TODAY,
 )
   .map((e) => ({
     ...e,

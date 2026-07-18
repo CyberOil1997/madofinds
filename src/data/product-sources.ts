@@ -71,6 +71,28 @@ export const PRODUCT_SOURCES: Record<string, SourceVideo> = {
   "B0FJRSG8VL": { url: "https://www.youtube.com/shorts/mEmqAEdISm0", type: "youtube-shorts", creator: "Sam Findz", segmentIds: [20], notes: "Pop-Up Outlet — ep3" },
   "B0DJ88YX8H": { url: "https://www.youtube.com/shorts/mEmqAEdISm0", type: "youtube-shorts", creator: "Sam Findz", segmentIds: [19], notes: "Floor Lounger — ep3 (fixed match)" },
   "B010TCP3SC": { url: "https://www.youtube.com/shorts/mEmqAEdISm0", type: "youtube-shorts", creator: "Sam Findz", segmentIds: [11], notes: "Waffle Maker — ep3" },
+
+  // ===== Episode 4 (v14 outdoor) — sourced from Sam Findz hkDffqGa6-4 =====
+  "B0H7J6NY2T": { url: "https://www.youtube.com/shorts/hkDffqGa6-4", type: "youtube-shorts", creator: "Sam Findz", notes: "pool-lounger — ep4" },
+  "B0F9SVKH2P": { url: "https://www.youtube.com/shorts/hkDffqGa6-4", type: "youtube-shorts", creator: "Sam Findz", notes: "movie-screen — ep4" },
+  "B0GVNBNY8T": { url: "https://www.youtube.com/shorts/hkDffqGa6-4", type: "youtube-shorts", creator: "Sam Findz", notes: "sand-remover — ep4" },
+  "B0F98YYJ6P": { url: "https://www.youtube.com/shorts/hkDffqGa6-4", type: "youtube-shorts", creator: "Sam Findz", notes: "laptop-shade — ep4" },
+  "B0B5QCG93T": { url: "https://www.youtube.com/shorts/hkDffqGa6-4", type: "youtube-shorts", creator: "Sam Findz", notes: "water-balloons — ep4" },
+  "B0D1NZZG6Y": { url: "https://www.youtube.com/shorts/hkDffqGa6-4", type: "youtube-shorts", creator: "Sam Findz", notes: "drink-belt — ep4" },
+  "B0GTRKXN1J": { url: "https://www.youtube.com/shorts/hkDffqGa6-4", type: "youtube-shorts", creator: "Sam Findz", notes: "bug-zapper — ep4" },
+  "B0D7HPRRX2": { url: "https://www.youtube.com/shorts/hkDffqGa6-4", type: "youtube-shorts", creator: "Sam Findz", notes: "phone-umbrella — ep4" },
+  "B0H1WQ4PL9": { url: "https://www.youtube.com/shorts/hkDffqGa6-4", type: "youtube-shorts", creator: "Sam Findz", notes: "cooler-table — ep4" },
+
+  // ===== Episode 5 (v15 kitchen) — sourced from Sam Findz scAo2EZc9qQ =====
+  "B073FT7QTN": { url: "https://www.youtube.com/shorts/scAo2EZc9qQ", type: "youtube-shorts", creator: "Sam Findz", notes: "onion-holder — ep5" },
+  "B0DPWWLVS9": { url: "https://www.youtube.com/shorts/scAo2EZc9qQ", type: "youtube-shorts", creator: "Sam Findz", notes: "produce-savers — ep5" },
+  "B0FSK7CV1B": { url: "https://www.youtube.com/shorts/scAo2EZc9qQ", type: "youtube-shorts", creator: "Sam Findz", notes: "divided-pot — ep5" },
+  "B0DCC15J2D": { url: "https://www.youtube.com/shorts/scAo2EZc9qQ", type: "youtube-shorts", creator: "Sam Findz", notes: "fridge-lockbox — ep5" },
+  "B085Q5F9VH": { url: "https://www.youtube.com/shorts/scAo2EZc9qQ", type: "youtube-shorts", creator: "Sam Findz", notes: "glass-brush — ep5" },
+  "B0GTQDGDN4": { url: "https://www.youtube.com/shorts/scAo2EZc9qQ", type: "youtube-shorts", creator: "Sam Findz", notes: "bowl-liners — ep5" },
+  "B015EKXE2G": { url: "https://www.youtube.com/shorts/scAo2EZc9qQ", type: "youtube-shorts", creator: "Sam Findz", notes: "silicone-lids — ep5" },
+  "B0GTNWVV6H": { url: "https://www.youtube.com/shorts/scAo2EZc9qQ", type: "youtube-shorts", creator: "Sam Findz", notes: "citrus-juicer — ep5" },
+  "B0H4VZ38J7": { url: "https://www.youtube.com/shorts/scAo2EZc9qQ", type: "youtube-shorts", creator: "Sam Findz", notes: "vacuum-sealer — ep5" },
 };
 
 /**
@@ -130,6 +152,40 @@ export const EPISODES: EpisodeInfo[] = [
       "B0FJRSG8VL",  // Pop-Up Outlet
       "B0DJ88YX8H",  // Bean Bag
       "B010TCP3SC",  // Waffle Maker
+    ],
+  },
+  {
+    slug: "ep4-v14-samref",
+    ytVideoId: "KC2CYYc0h84",
+    title: "Amazon's outdoor aisle has no business being this good ☀️",
+    publishedAt: "2026-07-18",
+    productAsins: [
+      "B0H7J6NY2T",
+      "B0F9SVKH2P",
+      "B0GVNBNY8T",
+      "B0F98YYJ6P",
+      "B0B5QCG93T",
+      "B0D1NZZG6Y",
+      "B0GTRKXN1J",
+      "B0D7HPRRX2",
+      "B0H1WQ4PL9",
+    ],
+  },
+  {
+    slug: "ep5-v15-samref",
+    ytVideoId: "IG0nRmYv5IM",
+    title: "Amazon kitchen finds that actually earn their drawer space 🍳",
+    publishedAt: "2026-07-19",
+    productAsins: [
+      "B073FT7QTN",
+      "B0DPWWLVS9",
+      "B0FSK7CV1B",
+      "B0DCC15J2D",
+      "B085Q5F9VH",
+      "B0GTQDGDN4",
+      "B015EKXE2G",
+      "B0GTNWVV6H",
+      "B0H4VZ38J7",
     ],
   },
 ];
