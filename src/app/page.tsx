@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { HeaderV2 } from "@/components/v2/HeaderV2";
 import { HeroV2 } from "@/components/v2/HeroV2";
 import { ProductRunway } from "@/components/v2/ProductRunway";
-import { VideoSpotlight } from "@/components/v2/VideoSpotlight";
+import { NowOnVideo } from "@/components/v2/NowOnVideo";
 import { CollectionShowcase } from "@/components/v2/CollectionShowcase";
 import { BookmarkCTA } from "@/components/v2/BookmarkCTA";
 import { PRODUCTS } from "@/data/products";
@@ -55,7 +55,7 @@ export default function Home() {
           <ProductRunway products={runway} duration={90} cardWidth={280} />
         </section>
 
-        <VideoSpotlight />
+        <NowOnVideo />
         <CollectionShowcase />
         <BookmarkCTA />
       </main>
