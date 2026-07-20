@@ -93,6 +93,22 @@ export const PRODUCT_SOURCES: Record<string, SourceVideo> = {
   "B015EKXE2G": { url: "https://www.youtube.com/shorts/scAo2EZc9qQ", type: "youtube-shorts", creator: "Sam Findz", notes: "silicone-lids — ep5" },
   "B0GTNWVV6H": { url: "https://www.youtube.com/shorts/scAo2EZc9qQ", type: "youtube-shorts", creator: "Sam Findz", notes: "citrus-juicer — ep5" },
   "B0H4VZ38J7": { url: "https://www.youtube.com/shorts/scAo2EZc9qQ", type: "youtube-shorts", creator: "Sam Findz", notes: "vacuum-sealer — ep5" },
+
+  // ===== Episode 6 (v16 growth path) =====
+  "B01B5SOUF6": { url: "https://www.youtube.com/shorts/09kr_U9y1SM", type: "youtube-shorts", creator: "Sam Findz", notes: "corn-stripper — ep6" },
+  "B0DGTR965B": { url: "https://www.youtube.com/shorts/09kr_U9y1SM", type: "youtube-shorts", creator: "Sam Findz", notes: "heated-scoop — ep6" },
+  "B07ZHK68K8": { url: "https://www.youtube.com/shorts/09kr_U9y1SM", type: "youtube-shorts", creator: "Sam Findz", notes: "can-lids — ep6" },
+  "B0FK2NP67T": { url: "https://www.youtube.com/shorts/09kr_U9y1SM", type: "youtube-shorts", creator: "Sam Findz", notes: "soup-molds — ep6" },
+  "B0G2BN7HV1": { url: "https://www.youtube.com/shorts/09kr_U9y1SM", type: "youtube-shorts", creator: "Sam Findz", notes: "pill-organizer — ep6" },
+  "B0GYF876KD": { url: "https://www.youtube.com/shorts/09kr_U9y1SM", type: "youtube-shorts", creator: "Sam Findz", notes: "math-stamp — ep6" },
+
+  // ===== Episode 7 (v17 growth path) =====
+  "B0H6P7Y3MD": { url: "https://www.youtube.com/shorts/PJ4OsCfSP2c", type: "youtube-shorts", creator: "Sam Findz", notes: "bag-sealer — ep7" },
+  "B096DJ3224": { url: "https://www.youtube.com/shorts/PJ4OsCfSP2c", type: "youtube-shorts", creator: "Sam Findz", notes: "drain-strainer — ep7" },
+  "B09332G51G": { url: "https://www.youtube.com/shorts/PJ4OsCfSP2c", type: "youtube-shorts", creator: "Sam Findz", notes: "nail-clipper — ep7" },
+  "B0DYV8VLFD": { url: "https://www.youtube.com/shorts/PJ4OsCfSP2c", type: "youtube-shorts", creator: "Sam Findz", notes: "can-opener — ep7" },
+  "B07L79MNDC": { url: "https://www.youtube.com/shorts/PJ4OsCfSP2c", type: "youtube-shorts", creator: "Sam Findz", notes: "crepe-maker — ep7" },
+  "B0F6YK4WR2": { url: "https://www.youtube.com/shorts/PJ4OsCfSP2c", type: "youtube-shorts", creator: "Sam Findz", notes: "book-lamp — ep7" },
 };
 
 /**
@@ -186,6 +202,34 @@ export const EPISODES: EpisodeInfo[] = [
       "B015EKXE2G",
       "B0GTNWVV6H",
       "B0H4VZ38J7",
+    ],
+  },
+  {
+    slug: "ep6-v16-samref",
+    ytVideoId: "jdtD-k3EJ3Q",
+    title: "6 things I genuinely didn't know existed 🤯",
+    publishedAt: "2026-07-20",
+    productAsins: [
+      "B01B5SOUF6",
+      "B0DGTR965B",
+      "B07ZHK68K8",
+      "B0FK2NP67T",
+      "B0G2BN7HV1",
+      "B0GYF876KD",
+    ],
+  },
+  {
+    slug: "ep7-v17-samref",
+    ytVideoId: "aJ8G5ks-ElQ",
+    title: "6 things I'd never seen before 🤯",
+    publishedAt: "2026-07-21",
+    productAsins: [
+      "B0H6P7Y3MD",
+      "B096DJ3224",
+      "B09332G51G",
+      "B0DYV8VLFD",
+      "B07L79MNDC",
+      "B0F6YK4WR2",
     ],
   },
 ];
