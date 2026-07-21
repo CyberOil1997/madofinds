@@ -109,6 +109,13 @@ export const PRODUCT_SOURCES: Record<string, SourceVideo> = {
   "B0DYV8VLFD": { url: "https://www.youtube.com/shorts/PJ4OsCfSP2c", type: "youtube-shorts", creator: "Sam Findz", notes: "can-opener — ep7" },
   "B07L79MNDC": { url: "https://www.youtube.com/shorts/PJ4OsCfSP2c", type: "youtube-shorts", creator: "Sam Findz", notes: "crepe-maker — ep7" },
   "B0F6YK4WR2": { url: "https://www.youtube.com/shorts/PJ4OsCfSP2c", type: "youtube-shorts", creator: "Sam Findz", notes: "book-lamp — ep7" },
+
+  // ===== Episode 8 (v18 growth path) =====
+  "B0DDPTXD7T": { url: "https://www.youtube.com/watch?v=UW1-FUoOfY4", type: "youtube-shorts", creator: "Sam Findz", notes: "candy-dispenser — ep8" },
+  "B0BLRYMP5R": { url: "https://www.youtube.com/watch?v=UW1-FUoOfY4", type: "youtube-shorts", creator: "Sam Findz", notes: "lemon-screws — ep8" },
+  "B0GJ5DD38G": { url: "https://www.youtube.com/watch?v=UW1-FUoOfY4", type: "youtube-shorts", creator: "Sam Findz", notes: "travel-bottles — ep8" },
+  "B0G39BSXHS": { url: "https://www.youtube.com/watch?v=UW1-FUoOfY4", type: "youtube-shorts", creator: "Sam Findz", notes: "salad-bowl — ep8" },
+  "B0812CSL1P": { url: "https://www.youtube.com/watch?v=UW1-FUoOfY4", type: "youtube-shorts", creator: "Sam Findz", notes: "stone-bath-mat — ep8" },
 };
 
 /**
@@ -230,6 +237,19 @@ export const EPISODES: EpisodeInfo[] = [
       "B0DYV8VLFD",
       "B07L79MNDC",
       "B0F6YK4WR2",
+    ],
+  },
+  {
+    slug: "ep8-v18-samref",
+    ytVideoId: "iWIuUItS26I",
+    title: "5 things I'd buy again immediately 🤯",
+    publishedAt: "2026-07-22",
+    productAsins: [
+      "B0DDPTXD7T",
+      "B0BLRYMP5R",
+      "B0GJ5DD38G",
+      "B0G39BSXHS",
+      "B0812CSL1P",
     ],
   },
 ];
