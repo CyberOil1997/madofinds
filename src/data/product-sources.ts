@@ -116,6 +116,14 @@ export const PRODUCT_SOURCES: Record<string, SourceVideo> = {
   "B0GJ5DD38G": { url: "https://www.youtube.com/watch?v=UW1-FUoOfY4", type: "youtube-shorts", creator: "Sam Findz", notes: "travel-bottles — ep8" },
   "B0G39BSXHS": { url: "https://www.youtube.com/watch?v=UW1-FUoOfY4", type: "youtube-shorts", creator: "Sam Findz", notes: "salad-bowl — ep8" },
   "B0812CSL1P": { url: "https://www.youtube.com/watch?v=UW1-FUoOfY4", type: "youtube-shorts", creator: "Sam Findz", notes: "stone-bath-mat — ep8" },
+
+  // ===== Episode 9 (v19 growth path) =====
+  "B0DS4DXNR6": { url: "https://www.youtube.com/watch?v=rmmse23sJZE", type: "youtube-shorts", creator: "Sam Findz", notes: "sf-ed-clip-strainer — ep9" },
+  "B0G4C14DXZ": { url: "https://www.youtube.com/watch?v=rmmse23sJZE", type: "youtube-shorts", creator: "Sam Findz", notes: "drain-cover — ep9" },
+  "B07SHL6P8V": { url: "https://www.youtube.com/watch?v=rmmse23sJZE", type: "youtube-shorts", creator: "Sam Findz", notes: "tube-squeezer — ep9" },
+  "B0BXDKGBH8": { url: "https://www.youtube.com/watch?v=rmmse23sJZE", type: "youtube-shorts", creator: "Sam Findz", notes: "grape-cutter — ep9" },
+  "B07BR9YDGF": { url: "https://www.youtube.com/watch?v=rmmse23sJZE", type: "youtube-shorts", creator: "Sam Findz", notes: "travel-hangers — ep9" },
+  "B0C8MK5B31": { url: "https://www.youtube.com/watch?v=rmmse23sJZE", type: "youtube-shorts", creator: "Sam Findz", notes: "fridge-turntable — ep9" },
 };
 
 /**
@@ -250,6 +258,20 @@ export const EPISODES: EpisodeInfo[] = [
       "B0GJ5DD38G",
       "B0G39BSXHS",
       "B0812CSL1P",
+    ],
+  },
+  {
+    slug: "ep9-v19-samref",
+    ytVideoId: "1EjkioNgBTs",
+    title: "6 things under $15 that I actually use 🤯",
+    publishedAt: "2026-07-23",
+    productAsins: [
+      "B0DS4DXNR6",
+      "B0G4C14DXZ",
+      "B07SHL6P8V",
+      "B0BXDKGBH8",
+      "B07BR9YDGF",
+      "B0C8MK5B31",
     ],
   },
 ];
