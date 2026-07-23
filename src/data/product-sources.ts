@@ -124,6 +124,15 @@ export const PRODUCT_SOURCES: Record<string, SourceVideo> = {
   "B0BXDKGBH8": { url: "https://www.youtube.com/watch?v=rmmse23sJZE", type: "youtube-shorts", creator: "Sam Findz", notes: "grape-cutter — ep9" },
   "B07BR9YDGF": { url: "https://www.youtube.com/watch?v=rmmse23sJZE", type: "youtube-shorts", creator: "Sam Findz", notes: "travel-hangers — ep9" },
   "B0C8MK5B31": { url: "https://www.youtube.com/watch?v=rmmse23sJZE", type: "youtube-shorts", creator: "Sam Findz", notes: "fridge-turntable — ep9" },
+
+  // ===== Episode 10 (v20 fast-cut path) =====
+  "B0GSQW4RSH": { url: "https://www.youtube.com/watch?v=rmmse23sJZE", type: "youtube-shorts", creator: "Sam Findz", notes: "sf-e10-foot-pull — ep10" },
+  "B0G5B2YGVJ": { url: "https://www.youtube.com/watch?v=rmmse23sJZE", type: "youtube-shorts", creator: "Sam Findz", notes: "sf-e10-whisk-straw — ep10" },
+  "B0GGXBQL3S": { url: "https://www.youtube.com/watch?v=rmmse23sJZE", type: "youtube-shorts", creator: "Sam Findz", notes: "sf-e10-tortilla-sealer — ep10" },
+  "B00020O3YC": { url: "https://www.youtube.com/watch?v=rmmse23sJZE", type: "youtube-shorts", creator: "Sam Findz", notes: "sf-e10-butter-cutter — ep10" },
+  "B0F5QMR6HV": { url: "https://www.youtube.com/watch?v=rmmse23sJZE", type: "youtube-shorts", creator: "Sam Findz", notes: "sf-e10-magnetic-frames — ep10" },
+  "B08ZL65YCD": { url: "https://www.youtube.com/watch?v=rmmse23sJZE", type: "youtube-shorts", creator: "Sam Findz", notes: "sf-e10-sink-topper — ep10" },
+  "B0B3WSZ3QP": { url: "https://www.youtube.com/watch?v=rmmse23sJZE", type: "youtube-shorts", creator: "Sam Findz", notes: "sf-e10-lazy-susan — ep10" },
 };
 
 /**
@@ -272,6 +281,21 @@ export const EPISODES: EpisodeInfo[] = [
       "B0BXDKGBH8",
       "B07BR9YDGF",
       "B0C8MK5B31",
+    ],
+  },
+  {
+    slug: "ep10-v20-samref",
+    ytVideoId: "3ci8ofJeuaQ",
+    title: "7 Amazon things I use every single week 🤯",
+    publishedAt: "2026-07-24",
+    productAsins: [
+      "B0GSQW4RSH",
+      "B0G5B2YGVJ",
+      "B0GGXBQL3S",
+      "B00020O3YC",
+      "B0F5QMR6HV",
+      "B08ZL65YCD",
+      "B0B3WSZ3QP",
     ],
   },
 ];
