@@ -133,6 +133,27 @@ export const PRODUCT_SOURCES: Record<string, SourceVideo> = {
   "B0F5QMR6HV": { url: "https://www.youtube.com/watch?v=rmmse23sJZE", type: "youtube-shorts", creator: "Sam Findz", notes: "sf-e10-magnetic-frames — ep10" },
   "B08ZL65YCD": { url: "https://www.youtube.com/watch?v=rmmse23sJZE", type: "youtube-shorts", creator: "Sam Findz", notes: "sf-e10-sink-topper — ep10" },
   "B0B3WSZ3QP": { url: "https://www.youtube.com/watch?v=rmmse23sJZE", type: "youtube-shorts", creator: "Sam Findz", notes: "sf-e10-lazy-susan — ep10" },
+
+  // ===== Episode 11 (v21 big-list) =====
+  "B0CM3ML9TZ": { url: "https://www.youtube.com/watch?v=pwkbYjKchLY", type: "youtube-shorts", creator: "Sam Findz", notes: "rolling-pin — ep11" },
+  "B0CRRWZHK1": { url: "https://www.youtube.com/watch?v=pwkbYjKchLY", type: "youtube-shorts", creator: "Sam Findz", notes: "sheep-tp — ep11" },
+  "B00VYC263M": { url: "https://www.youtube.com/watch?v=pwkbYjKchLY", type: "youtube-shorts", creator: "Sam Findz", notes: "soda — ep11" },
+  "B0FNML674Z": { url: "https://www.youtube.com/watch?v=pwkbYjKchLY", type: "youtube-shorts", creator: "Sam Findz", notes: "candy-frame — ep11" },
+  "B0GD6BKL2W": { url: "https://www.youtube.com/watch?v=pwkbYjKchLY", type: "youtube-shorts", creator: "Sam Findz", notes: "museum-gel — ep11" },
+  "B0DKGZMQPR": { url: "https://www.youtube.com/watch?v=pwkbYjKchLY", type: "youtube-shorts", creator: "Sam Findz", notes: "fan-cleaner — ep11" },
+  "B0G9LLVMX3": { url: "https://www.youtube.com/watch?v=pwkbYjKchLY", type: "youtube-shorts", creator: "Sam Findz", notes: "flip-flops — ep11" },
+  "B0BHPKKF57": { url: "https://www.youtube.com/watch?v=pwkbYjKchLY", type: "youtube-shorts", creator: "Sam Findz", notes: "measuring-tape — ep11" },
+  "B0CZL9R25L": { url: "https://www.youtube.com/watch?v=pwkbYjKchLY", type: "youtube-shorts", creator: "Sam Findz", notes: "hat-organizer — ep11" },
+  "B0GTRB7RDG": { url: "https://www.youtube.com/watch?v=pwkbYjKchLY", type: "youtube-shorts", creator: "Sam Findz", notes: "butter-knife — ep11" },
+  "B0DYDP68ST": { url: "https://www.youtube.com/watch?v=pwkbYjKchLY", type: "youtube-shorts", creator: "Sam Findz", notes: "lint-roller — ep11" },
+
+  // ===== Episode 12 (v22 fast-cut) =====
+  "B0CJRM936N": { url: "https://www.youtube.com/watch?v=5gWBWcQEV68", type: "youtube-shorts", creator: "Sam Findz", notes: "lint-remover — ep12" },
+  "B0FHHXSGJJ": { url: "https://www.youtube.com/watch?v=5gWBWcQEV68", type: "youtube-shorts", creator: "Sam Findz", notes: "dish-soap — ep12" },
+  "B00PR82UC6": { url: "https://www.youtube.com/watch?v=5gWBWcQEV68", type: "youtube-shorts", creator: "Sam Findz", notes: "bag-sealer — ep12" },
+  "B0CN92X7JP": { url: "https://www.youtube.com/watch?v=5gWBWcQEV68", type: "youtube-shorts", creator: "Sam Findz", notes: "drawer-org — ep12" },
+  "B0G73357VM": { url: "https://www.youtube.com/watch?v=5gWBWcQEV68", type: "youtube-shorts", creator: "Sam Findz", notes: "door-stopper — ep12" },
+  "B09GW2H7W6": { url: "https://www.youtube.com/watch?v=5gWBWcQEV68", type: "youtube-shorts", creator: "Sam Findz", notes: "flex-vase — ep12" },
 };
 
 /**
@@ -296,6 +317,39 @@ export const EPISODES: EpisodeInfo[] = [
       "B0F5QMR6HV",
       "B08ZL65YCD",
       "B0B3WSZ3QP",
+    ],
+  },
+  {
+    slug: "ep11-v21-samref",
+    ytVideoId: "r7fIkuvxrWo",
+    title: "11 cheap Amazon things that make life easier 🤯",
+    publishedAt: "2026-07-25",
+    productAsins: [
+      "B0CM3ML9TZ",
+      "B0CRRWZHK1",
+      "B00VYC263M",
+      "B0FNML674Z",
+      "B0GD6BKL2W",
+      "B0DKGZMQPR",
+      "B0G9LLVMX3",
+      "B0BHPKKF57",
+      "B0CZL9R25L",
+      "B0GTRB7RDG",
+      "B0DYDP68ST",
+    ],
+  },
+  {
+    slug: "ep12-v22-samref",
+    ytVideoId: "yzK8HXT7pYY",
+    title: "6 Amazon things that never disappoint 🤯",
+    publishedAt: "2026-07-26",
+    productAsins: [
+      "B0CJRM936N",
+      "B0FHHXSGJJ",
+      "B00PR82UC6",
+      "B0CN92X7JP",
+      "B0G73357VM",
+      "B09GW2H7W6",
     ],
   },
 ];
