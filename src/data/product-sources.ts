@@ -154,6 +154,14 @@ export const PRODUCT_SOURCES: Record<string, SourceVideo> = {
   "B0CN92X7JP": { url: "https://www.youtube.com/watch?v=5gWBWcQEV68", type: "youtube-shorts", creator: "Sam Findz", notes: "drawer-org — ep12" },
   "B0G73357VM": { url: "https://www.youtube.com/watch?v=5gWBWcQEV68", type: "youtube-shorts", creator: "Sam Findz", notes: "door-stopper — ep12" },
   "B09GW2H7W6": { url: "https://www.youtube.com/watch?v=5gWBWcQEV68", type: "youtube-shorts", creator: "Sam Findz", notes: "flex-vase — ep12" },
+
+  // ===== Episode 13 (v23 fast-cut) =====
+  "B0D2HV4GZ2": { url: "https://www.youtube.com/watch?v=xti_38azqpk", type: "youtube-shorts", creator: "Sam Findz", notes: "electric-screwdriver — ep13" },
+  "B0BXKHKDCX": { url: "https://www.youtube.com/watch?v=xti_38azqpk", type: "youtube-shorts", creator: "Sam Findz", notes: "sphere-ice-mold — ep13" },
+  "B0CGRTY4ZK": { url: "https://www.youtube.com/watch?v=xti_38azqpk", type: "youtube-shorts", creator: "Sam Findz", notes: "magnetic-spoons — ep13" },
+  "B0GL951NDV": { url: "https://www.youtube.com/watch?v=xti_38azqpk", type: "youtube-shorts", creator: "Sam Findz", notes: "shoe-organizers — ep13" },
+  "B0855DXKL8": { url: "https://www.youtube.com/watch?v=xti_38azqpk", type: "youtube-shorts", creator: "Sam Findz", notes: "brush-cleaner — ep13" },
+  "B0DCFYK4ZL": { url: "https://www.youtube.com/watch?v=xti_38azqpk", type: "youtube-shorts", creator: "Sam Findz", notes: "bottle-lamp — ep13" },
 };
 
 /**
@@ -350,6 +358,20 @@ export const EPISODES: EpisodeInfo[] = [
       "B0CN92X7JP",
       "B0G73357VM",
       "B09GW2H7W6",
+    ],
+  },
+  {
+    slug: "ep13-v23-samref",
+    ytVideoId: "YdovHAxDTmI",
+    title: "6 Amazon things too good to ignore 🤯",
+    publishedAt: "2026-07-27",
+    productAsins: [
+      "B0D2HV4GZ2",
+      "B0BXKHKDCX",
+      "B0CGRTY4ZK",
+      "B0GL951NDV",
+      "B0855DXKL8",
+      "B0DCFYK4ZL",
     ],
   },
 ];
