@@ -162,6 +162,14 @@ export const PRODUCT_SOURCES: Record<string, SourceVideo> = {
   "B0GL951NDV": { url: "https://www.youtube.com/watch?v=xti_38azqpk", type: "youtube-shorts", creator: "Sam Findz", notes: "shoe-organizers — ep13" },
   "B0855DXKL8": { url: "https://www.youtube.com/watch?v=xti_38azqpk", type: "youtube-shorts", creator: "Sam Findz", notes: "brush-cleaner — ep13" },
   "B0DCFYK4ZL": { url: "https://www.youtube.com/watch?v=xti_38azqpk", type: "youtube-shorts", creator: "Sam Findz", notes: "bottle-lamp — ep13" },
+
+  // ===== Episode 14 (v24 fast-cut) =====
+  "B0H4W2GJTX": { url: "https://www.youtube.com/watch?v=KBUjzeY6eNQ", type: "youtube-shorts", creator: "Sam Findz", notes: "detergent-pump — ep14" },
+  "B07NVTGTT8": { url: "https://www.youtube.com/watch?v=KBUjzeY6eNQ", type: "youtube-shorts", creator: "Sam Findz", notes: "detangler-brush — ep14" },
+  "B0DCKCK326": { url: "https://www.youtube.com/watch?v=KBUjzeY6eNQ", type: "youtube-shorts", creator: "Sam Findz", notes: "veggie-chopper — ep14" },
+  "B0D2GWFWLF": { url: "https://www.youtube.com/watch?v=KBUjzeY6eNQ", type: "youtube-shorts", creator: "Sam Findz", notes: "tumbler-brush — ep14" },
+  "B0821VS3ZM": { url: "https://www.youtube.com/watch?v=KBUjzeY6eNQ", type: "youtube-shorts", creator: "Sam Findz", notes: "magnetic-soap — ep14" },
+  "B0DLWM657D": { url: "https://www.youtube.com/watch?v=KBUjzeY6eNQ", type: "youtube-shorts", creator: "Sam Findz", notes: "door-chime — ep14" },
 };
 
 /**
@@ -372,6 +380,20 @@ export const EPISODES: EpisodeInfo[] = [
       "B0GL951NDV",
       "B0855DXKL8",
       "B0DCFYK4ZL",
+    ],
+  },
+  {
+    slug: "ep14-v24-samref",
+    ytVideoId: "ScMT4g2Gqfc",
+    title: "6 Amazon things that make life effortless 🤯",
+    publishedAt: "2026-07-28",
+    productAsins: [
+      "B0H4W2GJTX",
+      "B07NVTGTT8",
+      "B0DCKCK326",
+      "B0D2GWFWLF",
+      "B0821VS3ZM",
+      "B0DLWM657D",
     ],
   },
 ];
