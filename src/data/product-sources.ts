@@ -178,6 +178,14 @@ export const PRODUCT_SOURCES: Record<string, SourceVideo> = {
   "B0H6HZ3XH3": { url: "https://www.youtube.com/watch?v=qj0EO3sqzoQ", type: "youtube-shorts", creator: "Sam Findz", notes: "garlic-dicer — ep15" },
   "B0B1THXR4D": { url: "https://www.youtube.com/watch?v=qj0EO3sqzoQ", type: "youtube-shorts", creator: "Sam Findz", notes: "watering-spikes — ep15" },
   "B0D7D61TVY": { url: "https://www.youtube.com/watch?v=qj0EO3sqzoQ", type: "youtube-shorts", creator: "Sam Findz", notes: "hot-dog-roller — ep15" },
+
+  // ===== Episode 16 (v26 fast-cut) =====
+  "B0FLBTW9L4": { url: "https://www.youtube.com/watch?v=xXNyr5Q3eMU", type: "youtube-shorts", creator: "Sam Findz", notes: "magsafe-charger — ep16" },
+  "B0D3X1JDK4": { url: "https://www.youtube.com/watch?v=xXNyr5Q3eMU", type: "youtube-shorts", creator: "Sam Findz", notes: "egg-cooker — ep16" },
+  "B07JNF1YNK": { url: "https://www.youtube.com/watch?v=xXNyr5Q3eMU", type: "youtube-shorts", creator: "Sam Findz", notes: "oven-lock — ep16" },
+  "B0DP6DCG3J": { url: "https://www.youtube.com/watch?v=xXNyr5Q3eMU", type: "youtube-shorts", creator: "Sam Findz", notes: "grain-dispenser — ep16" },
+  "B0CCTNDWRQ": { url: "https://www.youtube.com/watch?v=xXNyr5Q3eMU", type: "youtube-shorts", creator: "Sam Findz", notes: "wrap-dispenser — ep16" },
+  "B0BWW8G955": { url: "https://www.youtube.com/watch?v=xXNyr5Q3eMU", type: "youtube-shorts", creator: "Sam Findz", notes: "jewelry-box — ep16" },
 };
 
 /**
@@ -416,6 +424,20 @@ export const EPISODES: EpisodeInfo[] = [
       "B0H6HZ3XH3",
       "B0B1THXR4D",
       "B0D7D61TVY",
+    ],
+  },
+  {
+    slug: "ep16-v26-samref",
+    ytVideoId: "FLHxMmSVtY8",
+    title: "6 Amazon must-haves you didn't know you needed 🤯",
+    publishedAt: "2026-07-30",
+    productAsins: [
+      "B0FLBTW9L4",
+      "B0D3X1JDK4",
+      "B07JNF1YNK",
+      "B0DP6DCG3J",
+      "B0CCTNDWRQ",
+      "B0BWW8G955",
     ],
   },
 ];
