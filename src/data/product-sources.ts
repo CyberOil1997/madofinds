@@ -170,6 +170,14 @@ export const PRODUCT_SOURCES: Record<string, SourceVideo> = {
   "B0D2GWFWLF": { url: "https://www.youtube.com/watch?v=KBUjzeY6eNQ", type: "youtube-shorts", creator: "Sam Findz", notes: "tumbler-brush — ep14" },
   "B0821VS3ZM": { url: "https://www.youtube.com/watch?v=KBUjzeY6eNQ", type: "youtube-shorts", creator: "Sam Findz", notes: "magnetic-soap — ep14" },
   "B0DLWM657D": { url: "https://www.youtube.com/watch?v=KBUjzeY6eNQ", type: "youtube-shorts", creator: "Sam Findz", notes: "door-chime — ep14" },
+
+  // ===== Episode 15 (v25 fast-cut) =====
+  "B088CR8NMD": { url: "https://www.youtube.com/watch?v=qj0EO3sqzoQ", type: "youtube-shorts", creator: "Sam Findz", notes: "ice-tray — ep15" },
+  "B077NMWWM7": { url: "https://www.youtube.com/watch?v=qj0EO3sqzoQ", type: "youtube-shorts", creator: "Sam Findz", notes: "cereal-keeper — ep15" },
+  "B00068O22S": { url: "https://www.youtube.com/watch?v=qj0EO3sqzoQ", type: "youtube-shorts", creator: "Sam Findz", notes: "knob-covers — ep15" },
+  "B0H6HZ3XH3": { url: "https://www.youtube.com/watch?v=qj0EO3sqzoQ", type: "youtube-shorts", creator: "Sam Findz", notes: "garlic-dicer — ep15" },
+  "B0B1THXR4D": { url: "https://www.youtube.com/watch?v=qj0EO3sqzoQ", type: "youtube-shorts", creator: "Sam Findz", notes: "watering-spikes — ep15" },
+  "B0D7D61TVY": { url: "https://www.youtube.com/watch?v=qj0EO3sqzoQ", type: "youtube-shorts", creator: "Sam Findz", notes: "hot-dog-roller — ep15" },
 };
 
 /**
@@ -394,6 +402,20 @@ export const EPISODES: EpisodeInfo[] = [
       "B0D2GWFWLF",
       "B0821VS3ZM",
       "B0DLWM657D",
+    ],
+  },
+  {
+    slug: "ep15-v25-samref",
+    ytVideoId: "fzNvfP0C7NU",
+    title: "6 Amazon things you'll actually want 🤯",
+    publishedAt: "2026-07-29",
+    productAsins: [
+      "B088CR8NMD",
+      "B077NMWWM7",
+      "B00068O22S",
+      "B0H6HZ3XH3",
+      "B0B1THXR4D",
+      "B0D7D61TVY",
     ],
   },
 ];
