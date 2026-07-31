@@ -186,6 +186,14 @@ export const PRODUCT_SOURCES: Record<string, SourceVideo> = {
   "B0DP6DCG3J": { url: "https://www.youtube.com/watch?v=xXNyr5Q3eMU", type: "youtube-shorts", creator: "Sam Findz", notes: "grain-dispenser — ep16" },
   "B0CCTNDWRQ": { url: "https://www.youtube.com/watch?v=xXNyr5Q3eMU", type: "youtube-shorts", creator: "Sam Findz", notes: "wrap-dispenser — ep16" },
   "B0BWW8G955": { url: "https://www.youtube.com/watch?v=xXNyr5Q3eMU", type: "youtube-shorts", creator: "Sam Findz", notes: "jewelry-box — ep16" },
+
+  // ===== Episode 17 (v27 fast-cut) =====
+  "B0F3GL5MCP": { url: "https://www.youtube.com/watch?v=Sq0BI70-B4I", type: "youtube-shorts", creator: "Sam Findz", notes: "soap-dispenser — ep17" },
+  "B0DQXSYDMM": { url: "https://www.youtube.com/watch?v=Sq0BI70-B4I", type: "youtube-shorts", creator: "Sam Findz", notes: "utensil-holder — ep17" },
+  "B0DKJM4HFC": { url: "https://www.youtube.com/watch?v=Sq0BI70-B4I", type: "youtube-shorts", creator: "Sam Findz", notes: "herb-saver — ep17" },
+  "B0CC6DJQMW": { url: "https://www.youtube.com/watch?v=Sq0BI70-B4I", type: "youtube-shorts", creator: "Sam Findz", notes: "sheet-holders — ep17" },
+  "B01BOX86HU": { url: "https://www.youtube.com/watch?v=Sq0BI70-B4I", type: "youtube-shorts", creator: "Sam Findz", notes: "battery-adapters — ep17" },
+  "B0CH8DQKMN": { url: "https://www.youtube.com/watch?v=Sq0BI70-B4I", type: "youtube-shorts", creator: "Sam Findz", notes: "butter-slicer — ep17" },
 };
 
 /**
@@ -438,6 +446,20 @@ export const EPISODES: EpisodeInfo[] = [
       "B0DP6DCG3J",
       "B0CCTNDWRQ",
       "B0BWW8G955",
+    ],
+  },
+  {
+    slug: "ep17-v27-samref",
+    ytVideoId: "A1dfkTBpWCU",
+    title: "6 Amazon things everyone needs to buy 🤯",
+    publishedAt: "2026-07-31",
+    productAsins: [
+      "B0F3GL5MCP",
+      "B0DQXSYDMM",
+      "B0DKJM4HFC",
+      "B0CC6DJQMW",
+      "B01BOX86HU",
+      "B0CH8DQKMN",
     ],
   },
 ];
