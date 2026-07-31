@@ -194,6 +194,14 @@ export const PRODUCT_SOURCES: Record<string, SourceVideo> = {
   "B0CC6DJQMW": { url: "https://www.youtube.com/watch?v=Sq0BI70-B4I", type: "youtube-shorts", creator: "Sam Findz", notes: "sheet-holders — ep17" },
   "B01BOX86HU": { url: "https://www.youtube.com/watch?v=Sq0BI70-B4I", type: "youtube-shorts", creator: "Sam Findz", notes: "battery-adapters — ep17" },
   "B0CH8DQKMN": { url: "https://www.youtube.com/watch?v=Sq0BI70-B4I", type: "youtube-shorts", creator: "Sam Findz", notes: "butter-slicer — ep17" },
+
+  // ===== Episode 18 (v28 viral) =====
+  "B0GYXQ1MMK": { url: "https://www.youtube.com/watch?v=Y5xoV5iKWfY", type: "youtube-shorts", creator: "Sam Findz", notes: "range-hood — ep18" },
+  "B08C355HFF": { url: "https://www.youtube.com/watch?v=Y5xoV5iKWfY", type: "youtube-shorts", creator: "Sam Findz", notes: "auto-stirrer — ep18" },
+  "B0DQFPS54P": { url: "https://www.youtube.com/watch?v=Y5xoV5iKWfY", type: "youtube-shorts", creator: "Sam Findz", notes: "ice-cream-maker — ep18" },
+  "B0FVRXFZ9F": { url: "https://www.youtube.com/watch?v=Y5xoV5iKWfY", type: "youtube-shorts", creator: "Sam Findz", notes: "fruit-washer — ep18" },
+  "B08C3PGW29": { url: "https://www.youtube.com/watch?v=Y5xoV5iKWfY", type: "youtube-shorts", creator: "Sam Findz", notes: "sandwich-maker — ep18" },
+  "B08TWN43G4": { url: "https://www.youtube.com/watch?v=Y5xoV5iKWfY", type: "youtube-shorts", creator: "Sam Findz", notes: "onion-holder — ep18" },
 };
 
 /**
@@ -460,6 +468,20 @@ export const EPISODES: EpisodeInfo[] = [
       "B0CC6DJQMW",
       "B01BOX86HU",
       "B0CH8DQKMN",
+    ],
+  },
+  {
+    slug: "ep18-v28-samref",
+    ytVideoId: "tQLx3Jo-gNM",
+    title: "6 Amazon products you won't believe exist 🤯",
+    publishedAt: "2026-08-01",
+    productAsins: [
+      "B0GYXQ1MMK",
+      "B08C355HFF",
+      "B0DQFPS54P",
+      "B0FVRXFZ9F",
+      "B08C3PGW29",
+      "B08TWN43G4",
     ],
   },
 ];
