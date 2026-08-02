@@ -202,6 +202,14 @@ export const PRODUCT_SOURCES: Record<string, SourceVideo> = {
   "B0FVRXFZ9F": { url: "https://www.youtube.com/watch?v=Y5xoV5iKWfY", type: "youtube-shorts", creator: "Sam Findz", notes: "fruit-washer — ep18" },
   "B08C3PGW29": { url: "https://www.youtube.com/watch?v=Y5xoV5iKWfY", type: "youtube-shorts", creator: "Sam Findz", notes: "sandwich-maker — ep18" },
   "B08TWN43G4": { url: "https://www.youtube.com/watch?v=Y5xoV5iKWfY", type: "youtube-shorts", creator: "Sam Findz", notes: "onion-holder — ep18" },
+
+  // ===== Episode 19 (v29 fast-cut) =====
+  "B0BQZBMXD4": { url: "https://www.youtube.com/watch?v=pwCkvQREPPo", type: "youtube-shorts", creator: "Sam Findz", notes: "airplane-adapter — ep19" },
+  "B0797FJQT8": { url: "https://www.youtube.com/watch?v=pwCkvQREPPo", type: "youtube-shorts", creator: "Sam Findz", notes: "sole-cleaner — ep19" },
+  "B0D37JDBN4": { url: "https://www.youtube.com/watch?v=pwCkvQREPPo", type: "youtube-shorts", creator: "Sam Findz", notes: "rotary-grater — ep19" },
+  "B0DXL7W25J": { url: "https://www.youtube.com/watch?v=pwCkvQREPPo", type: "youtube-shorts", creator: "Sam Findz", notes: "cookie-clip — ep19" },
+  "B0C5X5JDW7": { url: "https://www.youtube.com/watch?v=pwCkvQREPPo", type: "youtube-shorts", creator: "Sam Findz", notes: "clear-notes — ep19" },
+  "B0DKNPMD37": { url: "https://www.youtube.com/watch?v=pwCkvQREPPo", type: "youtube-shorts", creator: "Sam Findz", notes: "caster-wheels — ep19" },
 };
 
 /**
@@ -482,6 +490,20 @@ export const EPISODES: EpisodeInfo[] = [
       "B0FVRXFZ9F",
       "B08C3PGW29",
       "B08TWN43G4",
+    ],
+  },
+  {
+    slug: "ep19-v29-samref",
+    ytVideoId: "I80YrzM9zn8",
+    title: "6 Amazon things that are totally worth it 🤯",
+    publishedAt: "2026-08-03",
+    productAsins: [
+      "B0BQZBMXD4",
+      "B0797FJQT8",
+      "B0D37JDBN4",
+      "B0DXL7W25J",
+      "B0C5X5JDW7",
+      "B0DKNPMD37",
     ],
   },
 ];
