@@ -216,6 +216,14 @@ export const PRODUCT_SOURCES: Record<string, SourceVideo> = {
   "B0FGXK98K9": { url: "https://www.youtube.com/watch?v=_rzOkifYqPk", type: "youtube-shorts", creator: "Sam Findz", notes: "fold-hamper — ep20" },
   "B0BRKH78N7": { url: "https://www.youtube.com/watch?v=_rzOkifYqPk", type: "youtube-shorts", creator: "Sam Findz", notes: "latte-pen — ep20" },
   "B00MH74S16": { url: "https://www.youtube.com/watch?v=_rzOkifYqPk", type: "youtube-shorts", creator: "Sam Findz", notes: "bed-risers — ep20" },
+
+  // ===== Episode 21 (v31 fast-cut) =====
+  "B07796MWGN": { url: "https://www.youtube.com/watch?v=XjACM361LLA", type: "youtube-shorts", creator: "Sam Findz", notes: "whisk-wiper — ep21" },
+  "B0CBK1RKF9": { url: "https://www.youtube.com/watch?v=XjACM361LLA", type: "youtube-shorts", creator: "Sam Findz", notes: "slushy-cup — ep21" },
+  "B0D8973DV8": { url: "https://www.youtube.com/watch?v=XjACM361LLA", type: "youtube-shorts", creator: "Sam Findz", notes: "arc-lighter — ep21" },
+  "B088J2TN8W": { url: "https://www.youtube.com/watch?v=XjACM361LLA", type: "youtube-shorts", creator: "Sam Findz", notes: "soap-loofah — ep21" },
+  "B0D3WG2SHF": { url: "https://www.youtube.com/watch?v=XjACM361LLA", type: "youtube-shorts", creator: "Sam Findz", notes: "compressed-towels — ep21" },
+  "B0BGL29DS5": { url: "https://www.youtube.com/watch?v=XjACM361LLA", type: "youtube-shorts", creator: "Sam Findz", notes: "cabinet-locks — ep21" },
 };
 
 /**
@@ -523,6 +531,20 @@ export const EPISODES: EpisodeInfo[] = [
       "B002XOHZWC",
       "B0BRKH78N7",
       "B00MH74S16",
+    ],
+  },
+  {
+    slug: "ep21-v31-samref",
+    ytVideoId: "6DF0kgxqW30",
+    title: "6 Amazon things I use all the time 🤯",
+    publishedAt: "2026-08-05",
+    productAsins: [
+      "B07796MWGN",
+      "B0CBK1RKF9",
+      "B0D8973DV8",
+      "B088J2TN8W",
+      "B0D3WG2SHF",
+      "B0BGL29DS5",
     ],
   },
 ];
