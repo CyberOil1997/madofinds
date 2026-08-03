@@ -210,6 +210,12 @@ export const PRODUCT_SOURCES: Record<string, SourceVideo> = {
   "B0DXL7W25J": { url: "https://www.youtube.com/watch?v=pwCkvQREPPo", type: "youtube-shorts", creator: "Sam Findz", notes: "cookie-clip — ep19" },
   "B0C5X5JDW7": { url: "https://www.youtube.com/watch?v=pwCkvQREPPo", type: "youtube-shorts", creator: "Sam Findz", notes: "clear-notes — ep19" },
   "B0DKNPMD37": { url: "https://www.youtube.com/watch?v=pwCkvQREPPo", type: "youtube-shorts", creator: "Sam Findz", notes: "caster-wheels — ep19" },
+
+  // ===== Episode 20 (v30 fast-cut) =====
+  "B08MFBDGGF": { url: "https://www.youtube.com/watch?v=_rzOkifYqPk", type: "youtube-shorts", creator: "Sam Findz", notes: "remote-outlet — ep20" },
+  "B0FGXK98K9": { url: "https://www.youtube.com/watch?v=_rzOkifYqPk", type: "youtube-shorts", creator: "Sam Findz", notes: "fold-hamper — ep20" },
+  "B0BRKH78N7": { url: "https://www.youtube.com/watch?v=_rzOkifYqPk", type: "youtube-shorts", creator: "Sam Findz", notes: "latte-pen — ep20" },
+  "B00MH74S16": { url: "https://www.youtube.com/watch?v=_rzOkifYqPk", type: "youtube-shorts", creator: "Sam Findz", notes: "bed-risers — ep20" },
 };
 
 /**
@@ -504,6 +510,19 @@ export const EPISODES: EpisodeInfo[] = [
       "B0DXL7W25J",
       "B0C5X5JDW7",
       "B0DKNPMD37",
+    ],
+  },
+  {
+    slug: "ep20-v30-samref",
+    ytVideoId: "t5rReI5A2f4",
+    title: "5 Amazon things way better than expected 🤯",
+    publishedAt: "2026-08-04",
+    productAsins: [
+      "B08MFBDGGF",
+      "B0FGXK98K9",
+      "B002XOHZWC",
+      "B0BRKH78N7",
+      "B00MH74S16",
     ],
   },
 ];
