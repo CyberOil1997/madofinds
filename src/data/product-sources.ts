@@ -231,6 +231,13 @@ export const PRODUCT_SOURCES: Record<string, SourceVideo> = {
   "B0885WX1YM": { url: "https://www.youtube.com/watch?v=N3MVOqzIOec", type: "youtube-shorts", creator: "Sam Findz", notes: "cutting-boards — ep22" },
   "B0GMW6KJ5G": { url: "https://www.youtube.com/watch?v=N3MVOqzIOec", type: "youtube-shorts", creator: "Sam Findz", notes: "number-candles — ep22" },
   "B08M5V3X1L": { url: "https://www.youtube.com/watch?v=N3MVOqzIOec", type: "youtube-shorts", creator: "Sam Findz", notes: "remote-holder — ep22" },
+
+  // ===== Episode 23 (v33 fast-cut) =====
+  "B07K1K2DLW": { url: "https://www.youtube.com/watch?v=XR0d0NEQx4I", type: "youtube-shorts", creator: "Sam Findz", notes: "spice-organizer — ep23" },
+  "B0CJF94M8J": { url: "https://www.youtube.com/watch?v=XR0d0NEQx4I", type: "youtube-shorts", creator: "Sam Findz", notes: "oil-sprayer — ep23" },
+  "B0CC4VJFLC": { url: "https://www.youtube.com/watch?v=XR0d0NEQx4I", type: "youtube-shorts", creator: "Sam Findz", notes: "can-organizer — ep23" },
+  "B0B4TCN8H9": { url: "https://www.youtube.com/watch?v=XR0d0NEQx4I", type: "youtube-shorts", creator: "Sam Findz", notes: "measuring-spoon — ep23" },
+  "B0D4526D6M": { url: "https://www.youtube.com/watch?v=XR0d0NEQx4I", type: "youtube-shorts", creator: "Sam Findz", notes: "spatula-tongs — ep23" },
 };
 
 /**
@@ -565,6 +572,19 @@ export const EPISODES: EpisodeInfo[] = [
       "B0885WX1YM",
       "B0GMW6KJ5G",
       "B08M5V3X1L",
+    ],
+  },
+  {
+    slug: "ep23-v33-samref",
+    ytVideoId: "t7-yOFS2BKc",
+    title: "5 genius Amazon kitchen gadgets you need 🤯",
+    publishedAt: "2026-08-07",
+    productAsins: [
+      "B07K1K2DLW",
+      "B0CJF94M8J",
+      "B0CC4VJFLC",
+      "B0B4TCN8H9",
+      "B0D4526D6M",
     ],
   },
 ];
