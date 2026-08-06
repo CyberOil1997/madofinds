@@ -224,6 +224,13 @@ export const PRODUCT_SOURCES: Record<string, SourceVideo> = {
   "B088J2TN8W": { url: "https://www.youtube.com/watch?v=XjACM361LLA", type: "youtube-shorts", creator: "Sam Findz", notes: "soap-loofah — ep21" },
   "B0D3WG2SHF": { url: "https://www.youtube.com/watch?v=XjACM361LLA", type: "youtube-shorts", creator: "Sam Findz", notes: "compressed-towels — ep21" },
   "B0BGL29DS5": { url: "https://www.youtube.com/watch?v=XjACM361LLA", type: "youtube-shorts", creator: "Sam Findz", notes: "cabinet-locks — ep21" },
+
+  // ===== Episode 22 (v32 fast-cut) =====
+  "B0CKYJFS48": { url: "https://www.youtube.com/watch?v=N3MVOqzIOec", type: "youtube-shorts", creator: "Sam Findz", notes: "squeegee-broom — ep22" },
+  "B0F4DG339S": { url: "https://www.youtube.com/watch?v=N3MVOqzIOec", type: "youtube-shorts", creator: "Sam Findz", notes: "key-finder — ep22" },
+  "B0885WX1YM": { url: "https://www.youtube.com/watch?v=N3MVOqzIOec", type: "youtube-shorts", creator: "Sam Findz", notes: "cutting-boards — ep22" },
+  "B0GMW6KJ5G": { url: "https://www.youtube.com/watch?v=N3MVOqzIOec", type: "youtube-shorts", creator: "Sam Findz", notes: "number-candles — ep22" },
+  "B08M5V3X1L": { url: "https://www.youtube.com/watch?v=N3MVOqzIOec", type: "youtube-shorts", creator: "Sam Findz", notes: "remote-holder — ep22" },
 };
 
 /**
@@ -545,6 +552,19 @@ export const EPISODES: EpisodeInfo[] = [
       "B088J2TN8W",
       "B0D3WG2SHF",
       "B0BGL29DS5",
+    ],
+  },
+  {
+    slug: "ep22-v32-samref",
+    ytVideoId: "E-MWQxbWeUM",
+    title: "5 genius Amazon products you need to try 🤯",
+    publishedAt: "2026-08-06",
+    productAsins: [
+      "B0CKYJFS48",
+      "B0F4DG339S",
+      "B0885WX1YM",
+      "B0GMW6KJ5G",
+      "B08M5V3X1L",
     ],
   },
 ];
