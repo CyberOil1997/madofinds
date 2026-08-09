@@ -295,6 +295,13 @@ export const IDEA_LISTS: IdeaList[] = [
     description: "Five genius Amazon kitchen gadgets that solve real problems.",
     accent: "amber",
   },
+  {
+    slug: "featured-episode-24",
+    title: "Ep 24: The Foaming Drain Cleaner",
+    short: "Ep 24 — Drain Cleaner",
+    description: "The pour-in foam that clears and deodorizes a nasty drain.",
+    accent: "rose",
+  },
 ];
 
 export const PRODUCTS: Product[] = [
@@ -2720,6 +2727,18 @@ export const PRODUCTS: Product[] = [
     videoId: "t7-yOFS2BKc",
     videoUrl: "https://www.youtube.com/shorts/t7-yOFS2BKc",
     listSlugs: ["featured-episode-23", "small-kitchen", "under-25"],
+  },
+  {
+    id: "sf-e24-drain-cleaner",
+    title: "Foaming Drain Cleaner, Foam Drains Sink Cleaner and Deodorizer, 2 Pack Drain Clog Remover Sink Hair Cleaner for Kitchen Sinks, Shower Drains, Tubs, Pipes",
+    blurb: "A pour-in foam that expands to fill the whole pipe, dissolving gunk and grease while it deodorizes your drain.",
+    priceRange: "~$23.99",
+    asin: "B0H79GWT92",
+    productUrl: "https://www.amazon.com/dp/B0H79GWT92?tag=madofinds-20",
+    imageUrl: "/product-images/B0H79GWT92.jpg",
+    videoId: "_dkYG3UejII",
+    videoUrl: "https://www.youtube.com/shorts/_dkYG3UejII",
+    listSlugs: ["featured-episode-24", "cleaning-hacks"],
   },
 ];
 

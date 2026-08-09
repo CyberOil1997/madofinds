@@ -238,6 +238,9 @@ export const PRODUCT_SOURCES: Record<string, SourceVideo> = {
   "B0CC4VJFLC": { url: "https://www.youtube.com/watch?v=XR0d0NEQx4I", type: "youtube-shorts", creator: "Sam Findz", notes: "can-organizer — ep23" },
   "B0B4TCN8H9": { url: "https://www.youtube.com/watch?v=XR0d0NEQx4I", type: "youtube-shorts", creator: "Sam Findz", notes: "measuring-spoon — ep23" },
   "B0D4526D6M": { url: "https://www.youtube.com/watch?v=XR0d0NEQx4I", type: "youtube-shorts", creator: "Sam Findz", notes: "spatula-tongs — ep23" },
+
+  // ===== Episode 24 (v34 single-hero) =====
+  "B0H79GWT92": { url: "https://www.youtube.com/watch?v=KK9F7k6c1OI", type: "youtube-shorts", creator: "Sam Findz", notes: "drain-cleaner — ep24" },
 };
 
 /**
@@ -585,6 +588,15 @@ export const EPISODES: EpisodeInfo[] = [
       "B0CC4VJFLC",
       "B0B4TCN8H9",
       "B0D4526D6M",
+    ],
+  },
+  {
+    slug: "ep24-v34-hero",
+    ytVideoId: "_dkYG3UejII",
+    title: "Your drain is nastier than you think 🫧",
+    publishedAt: "2026-08-10",
+    productAsins: [
+      "B0H79GWT92",
     ],
   },
 ];
