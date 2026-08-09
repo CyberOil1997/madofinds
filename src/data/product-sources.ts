@@ -241,6 +241,9 @@ export const PRODUCT_SOURCES: Record<string, SourceVideo> = {
 
   // ===== Episode 24 (v34 single-hero) =====
   "B0H79GWT92": { url: "https://www.youtube.com/watch?v=KK9F7k6c1OI", type: "youtube-shorts", creator: "Sam Findz", notes: "drain-cleaner — ep24" },
+
+  // ===== Episode 25 (v35 single-hero) =====
+  "B0HCHWVQV1": { url: "https://www.youtube.com/watch?v=PJ4OsCfSP2c", type: "youtube-shorts", creator: "Sam Findz", notes: "can-opener — ep25" },
 };
 
 /**
@@ -597,6 +600,15 @@ export const EPISODES: EpisodeInfo[] = [
     publishedAt: "2026-08-10",
     productAsins: [
       "B0H79GWT92",
+    ],
+  },
+  {
+    slug: "ep25-v35-hero",
+    ytVideoId: "7rBPTL8L-YI",
+    title: "Never fight a can opener again 🥫",
+    publishedAt: "2026-08-11",
+    productAsins: [
+      "B0HCHWVQV1",
     ],
   },
 ];

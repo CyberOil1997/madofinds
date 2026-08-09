@@ -302,6 +302,13 @@ export const IDEA_LISTS: IdeaList[] = [
     description: "The pour-in foam that clears and deodorizes a nasty drain.",
     accent: "rose",
   },
+  {
+    slug: "featured-episode-25",
+    title: "Ep 25: The One-Touch Can Opener",
+    short: "Ep 25 — Can Opener",
+    description: "The one-touch opener that pops any can with a smooth, safe edge.",
+    accent: "emerald",
+  },
 ];
 
 export const PRODUCTS: Product[] = [
@@ -2739,6 +2746,18 @@ export const PRODUCTS: Product[] = [
     videoId: "_dkYG3UejII",
     videoUrl: "https://www.youtube.com/shorts/_dkYG3UejII",
     listSlugs: ["featured-episode-24", "cleaning-hacks"],
+  },
+  {
+    id: "sf-e25-can-opener",
+    title: "Electric Can Opener, One Touch Automatic Smooth Edge for Seniors | Kitchen gadgets suitable for older adults with arthritis or weak hands.",
+    blurb: "A one-touch opener that rides the rim and pops any can off with a smooth, safe edge — no sharp lids or hand cramps.",
+    priceRange: "~$12.99",
+    asin: "B0HCHWVQV1",
+    productUrl: "https://www.amazon.com/dp/B0HCHWVQV1?tag=madofinds-20",
+    imageUrl: "/product-images/B0HCHWVQV1.jpg",
+    videoId: "7rBPTL8L-YI",
+    videoUrl: "https://www.youtube.com/shorts/7rBPTL8L-YI",
+    listSlugs: ["featured-episode-25", "small-kitchen"],
   },
 ];
 
