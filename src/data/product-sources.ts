@@ -244,6 +244,14 @@ export const PRODUCT_SOURCES: Record<string, SourceVideo> = {
 
   // ===== Episode 25 (v35 single-hero) =====
   "B0HCHWVQV1": { url: "https://www.youtube.com/watch?v=PJ4OsCfSP2c", type: "youtube-shorts", creator: "Sam Findz", notes: "can-opener — ep25" },
+
+  // ===== Episode 26 (v36 niche fast-cut) =====
+  "B0GXF2MHM6": { url: "https://www.youtube.com/watch?v=hkDffqGa6-4", type: "youtube-shorts", creator: "Sam Findz", notes: "water-balloons — ep26" },
+  "B0GS8W3BTL": { url: "https://www.youtube.com/watch?v=hkDffqGa6-4", type: "youtube-shorts", creator: "Sam Findz", notes: "phone-umbrella — ep26" },
+  "B0FFT624QW": { url: "https://www.youtube.com/watch?v=hkDffqGa6-4", type: "youtube-shorts", creator: "Sam Findz", notes: "sand-remover — ep26" },
+  "B0BKQ7MY3L": { url: "https://www.youtube.com/watch?v=hkDffqGa6-4", type: "youtube-shorts", creator: "Sam Findz", notes: "portable-fan — ep26" },
+  "B09NM53VGY": { url: "https://www.youtube.com/watch?v=hkDffqGa6-4", type: "youtube-shorts", creator: "Sam Findz", notes: "drink-belt — ep26" },
+  "B0CHVQG62J": { url: "https://www.youtube.com/watch?v=hkDffqGa6-4", type: "youtube-shorts", creator: "Sam Findz", notes: "waterproof-cards — ep26" },
 };
 
 /**
@@ -609,6 +617,20 @@ export const EPISODES: EpisodeInfo[] = [
     publishedAt: "2026-08-11",
     productAsins: [
       "B0HCHWVQV1",
+    ],
+  },
+  {
+    slug: "ep26-v36-samref",
+    ytVideoId: "fPXNY0zJNFM",
+    title: "6 Amazon summer must-haves for pool & beach days 🏖",
+    publishedAt: "2026-08-12",
+    productAsins: [
+      "B0GXF2MHM6",
+      "B0GS8W3BTL",
+      "B0FFT624QW",
+      "B0BKQ7MY3L",
+      "B09NM53VGY",
+      "B0CHVQG62J",
     ],
   },
 ];
