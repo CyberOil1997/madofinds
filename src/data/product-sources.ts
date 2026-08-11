@@ -252,6 +252,14 @@ export const PRODUCT_SOURCES: Record<string, SourceVideo> = {
   "B0BKQ7MY3L": { url: "https://www.youtube.com/watch?v=hkDffqGa6-4", type: "youtube-shorts", creator: "Sam Findz", notes: "portable-fan — ep26" },
   "B09NM53VGY": { url: "https://www.youtube.com/watch?v=hkDffqGa6-4", type: "youtube-shorts", creator: "Sam Findz", notes: "drink-belt — ep26" },
   "B0CHVQG62J": { url: "https://www.youtube.com/watch?v=hkDffqGa6-4", type: "youtube-shorts", creator: "Sam Findz", notes: "waterproof-cards — ep26" },
+
+  // ===== Episode 27 (v37 niche fast-cut) =====
+  "B08BNRQV8J": { url: "https://www.youtube.com/watch?v=qekpkMMjHSI", type: "youtube-shorts", creator: "Sam Findz", notes: "wheel-desk — ep27" },
+  "B06VVPWSXM": { url: "https://www.youtube.com/watch?v=qekpkMMjHSI", type: "youtube-shorts", creator: "Sam Findz", notes: "cargo-blocks — ep27" },
+  "B0DFC6KTDH": { url: "https://www.youtube.com/watch?v=qekpkMMjHSI", type: "youtube-shorts", creator: "Sam Findz", notes: "retract-charger — ep27" },
+  "B0C7SVNF9H": { url: "https://www.youtube.com/watch?v=qekpkMMjHSI", type: "youtube-shorts", creator: "Sam Findz", notes: "cup-expander — ep27" },
+  "B08SQ44CGZ": { url: "https://www.youtube.com/watch?v=qekpkMMjHSI", type: "youtube-shorts", creator: "Sam Findz", notes: "panoramic-mirror — ep27" },
+  "B0DLKBSJ6F": { url: "https://www.youtube.com/watch?v=qekpkMMjHSI", type: "youtube-shorts", creator: "Sam Findz", notes: "hanging-trash — ep27" },
 };
 
 /**
@@ -631,6 +639,20 @@ export const EPISODES: EpisodeInfo[] = [
       "B0BKQ7MY3L",
       "B09NM53VGY",
       "B0CHVQG62J",
+    ],
+  },
+  {
+    slug: "ep27-v37-samref",
+    ytVideoId: "DMH8lRV4bOI",
+    title: "6 Amazon car gadgets you didn't know you needed 🚗",
+    publishedAt: "2026-08-13",
+    productAsins: [
+      "B08BNRQV8J",
+      "B06VVPWSXM",
+      "B0DFC6KTDH",
+      "B0C7SVNF9H",
+      "B08SQ44CGZ",
+      "B0DLKBSJ6F",
     ],
   },
 ];
