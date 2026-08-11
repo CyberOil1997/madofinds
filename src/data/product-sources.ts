@@ -260,6 +260,9 @@ export const PRODUCT_SOURCES: Record<string, SourceVideo> = {
   "B0C7SVNF9H": { url: "https://www.youtube.com/watch?v=qekpkMMjHSI", type: "youtube-shorts", creator: "Sam Findz", notes: "cup-expander — ep27" },
   "B08SQ44CGZ": { url: "https://www.youtube.com/watch?v=qekpkMMjHSI", type: "youtube-shorts", creator: "Sam Findz", notes: "panoramic-mirror — ep27" },
   "B0DLKBSJ6F": { url: "https://www.youtube.com/watch?v=qekpkMMjHSI", type: "youtube-shorts", creator: "Sam Findz", notes: "hanging-trash — ep27" },
+
+  // ===== Standalone add (no video yet) =====
+  "B0GV1NPJF2": { url: "https://www.amazon.com/dp/B0GV1NPJF2", type: "amazon-pdp", creator: "Mado Finds", notes: "shark-breatheclear-air-purifier — standalone add" },
 };
 
 /**

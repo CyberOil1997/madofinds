@@ -2917,6 +2917,18 @@ export const PRODUCTS: Product[] = [
     videoUrl: "https://www.youtube.com/shorts/DMH8lRV4bOI",
     listSlugs: ["featured-episode-27", "under-25"],
   },
+  {
+    id: "shark-breatheclear-hp162",
+    title: "Shark BreatheClear Smart Air Purifier, HP162 | Motion-Sensing, HEPA-Exceeding, No Filter Changes up to 6 Years",
+    blurb: "A smart HEPA-exceeding purifier that scans the air 3,600 times an hour and auto-adjusts, capturing 99.98% of smoke, pollen, dust, dander, and VOCs — with no filter changes for up to 6 years.",
+    priceRange: "~$269.99",
+    asin: "B0GV1NPJF2",
+    productUrl: "https://www.amazon.com/dp/B0GV1NPJF2?tag=madofinds-20",
+    imageUrl: "/product-images/B0GV1NPJF2.jpg",
+    videoId: "",
+    videoUrl: "",
+    listSlugs: ["home-improvement", "editors-picks"],
+  },
 ];
 
 export function productsByList(slug: string): Product[] {
