@@ -323,6 +323,13 @@ export const IDEA_LISTS: IdeaList[] = [
     description: "Six Amazon car gadgets you didn't know you needed.",
     accent: "amber",
   },
+  {
+    slug: "featured-episode-28",
+    title: "Ep 28: The Ice Cream Sandwich Maker",
+    short: "Ep 28 — Ice Cream Sandwiches",
+    description: "The mold that presses a perfect ice cream sandwich every time.",
+    accent: "rose",
+  },
 ];
 
 export const PRODUCTS: Product[] = [
@@ -2928,6 +2935,18 @@ export const PRODUCTS: Product[] = [
     videoId: "",
     videoUrl: "",
     listSlugs: ["home-improvement", "editors-picks"],
+  },
+  {
+    id: "sf-e28-ice-cream-sandwich",
+    title: "Stainless Steel Ice Cream Sandwich Maker,Ice Cream Sandwich Scoop,Ice Cream Scoop with Trigger,Easy Release Sandwich Cookie Scoops For Kitchen and Dessert Shop",
+    blurb: "A press-and-mold that turns any ice cream and two cookies into a perfect bakery-style ice cream sandwich.",
+    priceRange: "~$16.99",
+    asin: "B0G13DGFKM",
+    productUrl: "https://www.amazon.com/dp/B0G13DGFKM?tag=madofinds-20",
+    imageUrl: "/product-images/B0G13DGFKM.jpg",
+    videoId: "-iUVOL2z4nk",
+    videoUrl: "https://www.youtube.com/shorts/-iUVOL2z4nk",
+    listSlugs: ["featured-episode-28", "small-kitchen", "under-25"],
   },
 ];
 

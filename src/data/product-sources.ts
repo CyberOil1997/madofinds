@@ -263,6 +263,9 @@ export const PRODUCT_SOURCES: Record<string, SourceVideo> = {
 
   // ===== Standalone add (no video yet) =====
   "B0GV1NPJF2": { url: "https://www.amazon.com/dp/B0GV1NPJF2", type: "amazon-pdp", creator: "Mado Finds", notes: "shark-breatheclear-air-purifier — standalone add" },
+
+  // ===== Episode 28 (v38 single-hero) =====
+  "B0G13DGFKM": { url: "https://www.youtube.com/watch?v=pnHqarCjQeI", type: "youtube-shorts", creator: "Sam Findz", notes: "ice-cream-sandwich — ep28" },
 };
 
 /**
@@ -656,6 +659,15 @@ export const EPISODES: EpisodeInfo[] = [
       "B0C7SVNF9H",
       "B08SQ44CGZ",
       "B0DLKBSJ6F",
+    ],
+  },
+  {
+    slug: "ep28-v38-hero",
+    ytVideoId: "-iUVOL2z4nk",
+    title: "Make ice cream sandwiches at home in seconds 🍪",
+    publishedAt: "2026-08-14",
+    productAsins: [
+      "B0G13DGFKM",
     ],
   },
 ];
