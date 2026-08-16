@@ -266,6 +266,14 @@ export const PRODUCT_SOURCES: Record<string, SourceVideo> = {
 
   // ===== Episode 28 (v38 single-hero) =====
   "B0G13DGFKM": { url: "https://www.youtube.com/watch?v=pnHqarCjQeI", type: "youtube-shorts", creator: "Sam Findz", notes: "ice-cream-sandwich — ep28" },
+
+  // ===== Episode 29 (v39 countdown) =====
+  "B0C1NJDTTX": { url: "https://www.youtube.com/watch?v=BG7IjizhjCs", type: "youtube-shorts", creator: "Sam Findz", notes: "spin-scrubber — ep29" },
+  "B0CGRGRXPY": { url: "https://www.youtube.com/watch?v=BG7IjizhjCs", type: "youtube-shorts", creator: "Sam Findz", notes: "chicken-shredder — ep29" },
+  "B0FT7NWBBK": { url: "https://www.youtube.com/watch?v=BG7IjizhjCs", type: "youtube-shorts", creator: "Sam Findz", notes: "garment-steamer — ep29" },
+  "B0DB23P5RY": { url: "https://www.youtube.com/watch?v=BG7IjizhjCs", type: "youtube-shorts", creator: "Sam Findz", notes: "shoe-rack — ep29" },
+  "B0GZ29X548": { url: "https://www.youtube.com/watch?v=BG7IjizhjCs", type: "youtube-shorts", creator: "Sam Findz", notes: "rechargeable-aa — ep29" },
+  "B0DZ6KKX5K": { url: "https://www.youtube.com/watch?v=BG7IjizhjCs", type: "youtube-shorts", creator: "Sam Findz", notes: "folding-fan — ep29" },
 };
 
 /**
@@ -668,6 +676,20 @@ export const EPISODES: EpisodeInfo[] = [
     publishedAt: "2026-08-14",
     productAsins: [
       "B0G13DGFKM",
+    ],
+  },
+  {
+    slug: "ep29-v39-samref",
+    ytVideoId: "cN-eCIaT8fE",
+    title: "6 Amazon finds worth every penny 🤯",
+    publishedAt: "2026-08-17",
+    productAsins: [
+      "B0C1NJDTTX",
+      "B0CGRGRXPY",
+      "B0FT7NWBBK",
+      "B0DB23P5RY",
+      "B0GZ29X548",
+      "B0DZ6KKX5K",
     ],
   },
 ];
