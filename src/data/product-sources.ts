@@ -282,6 +282,13 @@ export const PRODUCT_SOURCES: Record<string, SourceVideo> = {
   "B094NTCSDJ": { url: "https://www.youtube.com/watch?v=pnHqarCjQeI", type: "youtube-shorts", creator: "Sam Findz", notes: "yolk-separator — ep30" },
   "B0CLZP48BK": { url: "https://www.youtube.com/watch?v=pnHqarCjQeI", type: "youtube-shorts", creator: "Sam Findz", notes: "wrap-dispenser — ep30" },
   "B0BN1L81BQ": { url: "https://www.youtube.com/watch?v=pnHqarCjQeI", type: "youtube-shorts", creator: "Sam Findz", notes: "hair-organizer — ep30" },
+
+  // ===== Episode 31 (v41 countdown, mixed sources) =====
+  "B0D73GPYFC": { url: "https://www.youtube.com/watch?v=PJ4OsCfSP2c", type: "youtube-shorts", creator: "Sam Findz", notes: "lunch-box — ep31" },
+  "B0GV7KTT44": { url: "https://www.youtube.com/watch?v=PJ4OsCfSP2c", type: "youtube-shorts", creator: "Sam Findz", notes: "book-lamp — ep31" },
+  "B08T8D5W5L": { url: "https://www.youtube.com/watch?v=PJ4OsCfSP2c", type: "youtube-shorts", creator: "Sam Findz", notes: "foot-scrubber — ep31" },
+  "B0FW4MCM84": { url: "https://www.youtube.com/watch?v=PJ4OsCfSP2c", type: "youtube-shorts", creator: "Sam Findz", notes: "mini-iron — ep31" },
+  "B0DBVCL44N": { url: "https://www.youtube.com/watch?v=PJ4OsCfSP2c", type: "youtube-shorts", creator: "Sam Findz", notes: "cord-organizer — ep31" },
 };
 
 /**
@@ -712,6 +719,19 @@ export const EPISODES: EpisodeInfo[] = [
       "B094NTCSDJ",
       "B0CLZP48BK",
       "B0BN1L81BQ",
+    ],
+  },
+  {
+    slug: "ep31-v41-samref",
+    ytVideoId: "PNuQYwQVux0",
+    title: "5 Amazon finds that just make sense 🤯",
+    publishedAt: "2026-08-19",
+    productAsins: [
+      "B0D73GPYFC",
+      "B0GV7KTT44",
+      "B08T8D5W5L",
+      "B0FW4MCM84",
+      "B0DBVCL44N",
     ],
   },
 ];
