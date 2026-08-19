@@ -274,6 +274,14 @@ export const PRODUCT_SOURCES: Record<string, SourceVideo> = {
   "B0DB23P5RY": { url: "https://www.youtube.com/watch?v=BG7IjizhjCs", type: "youtube-shorts", creator: "Sam Findz", notes: "shoe-rack — ep29" },
   "B0GZ29X548": { url: "https://www.youtube.com/watch?v=BG7IjizhjCs", type: "youtube-shorts", creator: "Sam Findz", notes: "rechargeable-aa — ep29" },
   "B0DZ6KKX5K": { url: "https://www.youtube.com/watch?v=BG7IjizhjCs", type: "youtube-shorts", creator: "Sam Findz", notes: "folding-fan — ep29" },
+
+  // ===== Episode 30 (v40 countdown) =====
+  "B0DF6TL1KR": { url: "https://www.youtube.com/watch?v=pnHqarCjQeI", type: "youtube-shorts", creator: "Sam Findz", notes: "stanley-divider — ep30" },
+  "B0CWRGBT96": { url: "https://www.youtube.com/watch?v=pnHqarCjQeI", type: "youtube-shorts", creator: "Sam Findz", notes: "defrost-tray — ep30" },
+  "B0FB92WTCZ": { url: "https://www.youtube.com/watch?v=pnHqarCjQeI", type: "youtube-shorts", creator: "Sam Findz", notes: "magnetic-clips — ep30" },
+  "B094NTCSDJ": { url: "https://www.youtube.com/watch?v=pnHqarCjQeI", type: "youtube-shorts", creator: "Sam Findz", notes: "yolk-separator — ep30" },
+  "B0CLZP48BK": { url: "https://www.youtube.com/watch?v=pnHqarCjQeI", type: "youtube-shorts", creator: "Sam Findz", notes: "wrap-dispenser — ep30" },
+  "B0BN1L81BQ": { url: "https://www.youtube.com/watch?v=pnHqarCjQeI", type: "youtube-shorts", creator: "Sam Findz", notes: "hair-organizer — ep30" },
 };
 
 /**
@@ -690,6 +698,20 @@ export const EPISODES: EpisodeInfo[] = [
       "B0DB23P5RY",
       "B0GZ29X548",
       "B0DZ6KKX5K",
+    ],
+  },
+  {
+    slug: "ep30-v40-samref",
+    ytVideoId: "I9AoatZHZwI",
+    title: "6 Amazon hidden gems you'll actually use 🤯",
+    publishedAt: "2026-08-18",
+    productAsins: [
+      "B0DF6TL1KR",
+      "B0CWRGBT96",
+      "B0FB92WTCZ",
+      "B094NTCSDJ",
+      "B0CLZP48BK",
+      "B0BN1L81BQ",
     ],
   },
 ];
