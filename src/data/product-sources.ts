@@ -289,6 +289,27 @@ export const PRODUCT_SOURCES: Record<string, SourceVideo> = {
   "B08T8D5W5L": { url: "https://www.youtube.com/watch?v=PJ4OsCfSP2c", type: "youtube-shorts", creator: "Sam Findz", notes: "foot-scrubber — ep31" },
   "B0FW4MCM84": { url: "https://www.youtube.com/watch?v=PJ4OsCfSP2c", type: "youtube-shorts", creator: "Sam Findz", notes: "mini-iron — ep31" },
   "B0DBVCL44N": { url: "https://www.youtube.com/watch?v=PJ4OsCfSP2c", type: "youtube-shorts", creator: "Sam Findz", notes: "cord-organizer — ep31" },
+
+  // ===== Episode 32 (buffer) =====
+  "B0BM798RYV": { url: "https://www.youtube.com/watch?v=BG7IjizhjCs", type: "youtube-shorts", creator: "Sam Findz", notes: "sink-board — ep32" },
+  "B0D98Q8FJR": { url: "https://www.youtube.com/watch?v=BG7IjizhjCs", type: "youtube-shorts", creator: "Sam Findz", notes: "rolling-table — ep32" },
+  "B0BQJ2XZWF": { url: "https://www.youtube.com/watch?v=BG7IjizhjCs", type: "youtube-shorts", creator: "Sam Findz", notes: "pill-organizer — ep32" },
+  "B0CZ7F61XN": { url: "https://www.youtube.com/watch?v=BG7IjizhjCs", type: "youtube-shorts", creator: "Sam Findz", notes: "splash-mat — ep32" },
+  "B0CN8ZJRTZ": { url: "https://www.youtube.com/watch?v=BG7IjizhjCs", type: "youtube-shorts", creator: "Sam Findz", notes: "soda-lids — ep32" },
+
+  // ===== Episode 33 (buffer) =====
+  "B08LPST857": { url: "https://www.youtube.com/watch?v=pnHqarCjQeI", type: "youtube-shorts", creator: "Sam Findz", notes: "big-board — ep33" },
+  "B0F43TCWK9": { url: "https://www.youtube.com/watch?v=pnHqarCjQeI", type: "youtube-shorts", creator: "Sam Findz", notes: "loaf-pan — ep33" },
+  "B07KWRCXP5": { url: "https://www.youtube.com/watch?v=pnHqarCjQeI", type: "youtube-shorts", creator: "Sam Findz", notes: "utensil-dry — ep33" },
+  "B0DGTGB2J9": { url: "https://www.youtube.com/watch?v=pnHqarCjQeI", type: "youtube-shorts", creator: "Sam Findz", notes: "magnetic-cable — ep33" },
+  "B0CZSD6XS6": { url: "https://www.youtube.com/watch?v=pnHqarCjQeI", type: "youtube-shorts", creator: "Sam Findz", notes: "finer-liner — ep33" },
+
+  // ===== Episode 34 (buffer) =====
+  "B0028RXZ1O": { url: "https://www.youtube.com/watch?v=KK9F7k6c1OI", type: "youtube-shorts", creator: "Sam Findz", notes: "breader-bowl — ep34" },
+  "B09VPKW5JC": { url: "https://www.youtube.com/watch?v=KK9F7k6c1OI", type: "youtube-shorts", creator: "Sam Findz", notes: "crab-rest — ep34" },
+  "B07CT9QD8S": { url: "https://www.youtube.com/watch?v=KK9F7k6c1OI", type: "youtube-shorts", creator: "Sam Findz", notes: "colander — ep34" },
+  "B0FH22X8B5": { url: "https://www.youtube.com/watch?v=KK9F7k6c1OI", type: "youtube-shorts", creator: "Sam Findz", notes: "storage-ottoman — ep34" },
+  "B0BXJNJ2D1": { url: "https://www.youtube.com/watch?v=KK9F7k6c1OI", type: "youtube-shorts", creator: "Sam Findz", notes: "beard-catcher — ep34" },
 };
 
 /**
@@ -732,6 +753,45 @@ export const EPISODES: EpisodeInfo[] = [
       "B08T8D5W5L",
       "B0FW4MCM84",
       "B0DBVCL44N",
+    ],
+  },
+  {
+    slug: "ep32-v42-mixed",
+    ytVideoId: "dqKeICxtci0",
+    title: "5 Amazon finds that make life easier 🤯",
+    publishedAt: "2026-08-20",
+    productAsins: [
+      "B0BM798RYV",
+      "B0D98Q8FJR",
+      "B0BQJ2XZWF",
+      "B0CZ7F61XN",
+      "B0CN8ZJRTZ",
+    ],
+  },
+  {
+    slug: "ep33-v43-samref",
+    ytVideoId: "3Zxrr5gnbk0",
+    title: "5 clever Amazon finds you didn't know you needed 🤯",
+    publishedAt: "2026-08-21",
+    productAsins: [
+      "B08LPST857",
+      "B0F43TCWK9",
+      "B07KWRCXP5",
+      "B0DGTGB2J9",
+      "B0CZSD6XS6",
+    ],
+  },
+  {
+    slug: "ep34-v44-mixed",
+    ytVideoId: "3VxCmPCPO2Q",
+    title: "5 Amazon finds worth grabbing 🤯",
+    publishedAt: "2026-08-22",
+    productAsins: [
+      "B0028RXZ1O",
+      "B09VPKW5JC",
+      "B07CT9QD8S",
+      "B0FH22X8B5",
+      "B0BXJNJ2D1",
     ],
   },
 ];
