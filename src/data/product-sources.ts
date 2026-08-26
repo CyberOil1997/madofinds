@@ -310,6 +310,12 @@ export const PRODUCT_SOURCES: Record<string, SourceVideo> = {
   "B07CT9QD8S": { url: "https://www.youtube.com/watch?v=KK9F7k6c1OI", type: "youtube-shorts", creator: "Sam Findz", notes: "colander — ep34" },
   "B0FH22X8B5": { url: "https://www.youtube.com/watch?v=KK9F7k6c1OI", type: "youtube-shorts", creator: "Sam Findz", notes: "storage-ottoman — ep34" },
   "B0BXJNJ2D1": { url: "https://www.youtube.com/watch?v=KK9F7k6c1OI", type: "youtube-shorts", creator: "Sam Findz", notes: "beard-catcher — ep34" },
+
+  // ===== Episode 35 (bridge) =====
+  "B0GJZGJDXN": { url: "https://www.youtube.com/watch?v=qekpkMMjHSI", type: "youtube-shorts", creator: "Sam Findz", notes: "tablet-holder — ep35" },
+  "B0DQKH1LFB": { url: "https://www.youtube.com/watch?v=qekpkMMjHSI", type: "youtube-shorts", creator: "Sam Findz", notes: "bag-handles — ep35" },
+  "B08N11G8V2": { url: "https://www.youtube.com/watch?v=qekpkMMjHSI", type: "youtube-shorts", creator: "Sam Findz", notes: "mini-trash — ep35" },
+  "B0C89XCLS2": { url: "https://www.youtube.com/watch?v=qekpkMMjHSI", type: "youtube-shorts", creator: "Sam Findz", notes: "headrest-hooks — ep35" },
 };
 
 /**
@@ -792,6 +798,18 @@ export const EPISODES: EpisodeInfo[] = [
       "B07CT9QD8S",
       "B0FH22X8B5",
       "B0BXJNJ2D1",
+    ],
+  },
+  {
+    slug: "ep35-v45-car",
+    ytVideoId: "86gJ31On_i8",
+    title: "4 Amazon car finds under $20 🚗",
+    publishedAt: "2026-08-26",
+    productAsins: [
+      "B0GJZGJDXN",
+      "B0DQKH1LFB",
+      "B08N11G8V2",
+      "B0C89XCLS2",
     ],
   },
 ];
