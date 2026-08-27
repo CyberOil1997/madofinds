@@ -316,6 +316,13 @@ export const PRODUCT_SOURCES: Record<string, SourceVideo> = {
   "B0DQKH1LFB": { url: "https://www.youtube.com/watch?v=qekpkMMjHSI", type: "youtube-shorts", creator: "Sam Findz", notes: "bag-handles — ep35" },
   "B08N11G8V2": { url: "https://www.youtube.com/watch?v=qekpkMMjHSI", type: "youtube-shorts", creator: "Sam Findz", notes: "mini-trash — ep35" },
   "B0C89XCLS2": { url: "https://www.youtube.com/watch?v=qekpkMMjHSI", type: "youtube-shorts", creator: "Sam Findz", notes: "headrest-hooks — ep35" },
+
+  // ===== Episode 36 (tech under $50) =====
+  "B0916TKFF2": { url: "https://www.youtube.com/@TheSamFindz", type: "youtube-shorts", creator: "Sam Findz", notes: "roku-4k — ep36 (scouting stock)" },
+  "B07RCNB2L3": { url: "https://www.youtube.com/@TheSamFindz", type: "youtube-shorts", creator: "Sam Findz", notes: "kasa-plug — ep36 (scouting stock)" },
+  "B0CZ9M6X8Q": { url: "https://www.youtube.com/@TheSamFindz", type: "youtube-shorts", creator: "Sam Findz", notes: "anker-bank — ep36 (scouting stock)" },
+  "B01N1UX8RW": { url: "https://www.youtube.com/@TheSamFindz", type: "youtube-shorts", creator: "Sam Findz", notes: "renpho-scale — ep36 (scouting stock)" },
+  "B000JE9LD4": { url: "https://www.youtube.com/@TheSamFindz", type: "youtube-shorts", creator: "Sam Findz", notes: "belkin-strip — ep36 (scouting stock)" },
 };
 
 /**
@@ -810,6 +817,19 @@ export const EPISODES: EpisodeInfo[] = [
       "B0DQKH1LFB",
       "B08N11G8V2",
       "B0C89XCLS2",
+    ],
+  },
+  {
+    slug: "ep36-v46-tech",
+    ytVideoId: "3-rcUz0OcJY",
+    title: "5 Amazon tech finds under $50 🤯",
+    publishedAt: "2026-08-27",
+    productAsins: [
+      "B0916TKFF2",
+      "B07RCNB2L3",
+      "B0CZ9M6X8Q",
+      "B01N1UX8RW",
+      "B000JE9LD4",
     ],
   },
 ];
