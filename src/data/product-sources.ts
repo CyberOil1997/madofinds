@@ -31,6 +31,8 @@ export type EpisodeInfo = {
   title: string;
   publishedAt: string; // YYYY-MM-DD
   productAsins: string[]; // in ascending countdown order (matches pill labels 1-9)
+  /** "short" (vertical 9:16, default) or "long" (16:9 standard YouTube video). */
+  kind?: "short" | "long";
 };
 
 /**
@@ -830,6 +832,30 @@ export const EPISODES: EpisodeInfo[] = [
       "B0CZ9M6X8Q",
       "B01N1UX8RW",
       "B000JE9LD4",
+    ],
+  },
+  {
+    slug: "long-01-kitchen15",
+    ytVideoId: "WZUMv_QPIXg",
+    title: "15 Amazon Kitchen Gadgets That Are Actually Genius (2026)",
+    publishedAt: "2026-08-28",
+    kind: "long",
+    productAsins: [
+      "B08KPXYXZF",
+      "B0CM3ML9TZ",
+      "B073FT7QTN",
+      "B0BQQSBTZP",
+      "B0BXKHKDCX",
+      "B0FSK7CV1B",
+      "B07L79MNDC",
+      "B0CGRTY4ZK",
+      "B018W9JII0",
+      "B0DCKCK326",
+      "B08196DX71",
+      "B075X1KPLZ",
+      "B0764HS4SL",
+      "B010TCP3SC",
+      "B0D3X1JDK4",
     ],
   },
 ];

@@ -47,9 +47,12 @@ export function NowOnVideo() {
 
   const ep = episodes[active];
   const muted = !soundOn;
+  const isLong = ep.kind === "long";
   const embedSrc =
     `https://www.youtube.com/embed/${ep.ytVideoId}` +
-    `?autoplay=1&mute=${muted ? 1 : 0}&loop=1&playlist=${ep.ytVideoId}` +
+    `?autoplay=1&mute=${muted ? 1 : 0}` +
+    // long-form videos shouldn't loop (they're minutes long); Shorts do
+    (isLong ? "" : `&loop=1&playlist=${ep.ytVideoId}`) +
     `&controls=1&rel=0&modestbranding=1&playsinline=1`;
 
   const atStart = active === 0;
@@ -112,11 +115,11 @@ export function NowOnVideo() {
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: dir * -48 }}
               transition={{ duration: 0.32, ease: easeOutSoft }}
-              className="grid gap-8 lg:grid-cols-[minmax(0,320px)_1fr] lg:items-center"
+              className={`grid gap-8 lg:items-center ${isLong ? "lg:grid-cols-[minmax(0,560px)_1fr]" : "lg:grid-cols-[minmax(0,320px)_1fr]"}`}
             >
               {/* Video pane */}
-              <div className="mx-auto w-full max-w-[300px] lg:max-w-[320px]">
-                <div className="relative aspect-[9/16] overflow-hidden rounded-[1.75rem] border border-white/70 bg-black shadow-boutique-lg">
+              <div className={`mx-auto w-full ${isLong ? "max-w-[520px] lg:max-w-none" : "max-w-[300px] lg:max-w-[320px]"}`}>
+                <div className={`relative ${isLong ? "aspect-video" : "aspect-[9/16]"} overflow-hidden rounded-[1.75rem] border border-white/70 bg-black shadow-boutique-lg`}>
                   {inView ? (
                     <iframe
                       key={ep.ytVideoId + String(muted)}
@@ -214,7 +217,11 @@ export function NowOnVideo() {
                 </ul>
 
                 <a
-                  href={`https://www.youtube.com/shorts/${ep.ytVideoId}`}
+                  href={
+                    isLong
+                      ? `https://www.youtube.com/watch?v=${ep.ytVideoId}`
+                      : `https://www.youtube.com/shorts/${ep.ytVideoId}`
+                  }
                   target="_blank"
                   rel="noopener noreferrer"
                   className="mt-5 inline-flex items-center gap-1.5 text-[13px] font-semibold text-[color:var(--v2-clay)] hover:underline"
