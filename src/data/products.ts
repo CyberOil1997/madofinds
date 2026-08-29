@@ -386,6 +386,13 @@ export const IDEA_LISTS: IdeaList[] = [
     description: "Five Amazon tech finds, all under fifty bucks.",
     accent: "sky",
   },
+  {
+    slug: "featured-episode-37",
+    title: "Ep 37: Magnetic Door Stopper",
+    short: "Ep 37 — Door Stopper",
+    description: "A magnetic door catch that holds any door open.",
+    accent: "rose",
+  },
 ];
 
 export const PRODUCTS: Product[] = [
@@ -3495,6 +3502,18 @@ export const PRODUCTS: Product[] = [
     videoId: "3-rcUz0OcJY",
     videoUrl: "https://www.youtube.com/shorts/3-rcUz0OcJY",
     listSlugs: ["featured-episode-36", "home-improvement", "dorm-and-studio"],
+  },
+  {
+    id: "sf-e37-door-stopper",
+    title: "Magnetic Door Stopper, Door Catch Holder (Keeps Doors Open)",
+    blurb: "A two-piece magnetic door catch — one on the door, one on the wall — that grabs and holds any door wide open so it never slams or bangs.",
+    priceRange: "~$9.98",
+    asin: "B07QZVQRQD",
+    productUrl: "https://www.amazon.com/dp/B07QZVQRQD?tag=madofinds-20",
+    imageUrl: "/product-images/B07QZVQRQD.jpg",
+    videoId: "xuYR_WIUoAY",
+    videoUrl: "https://www.youtube.com/shorts/xuYR_WIUoAY",
+    listSlugs: ["featured-episode-37", "home-improvement", "under-25"],
   },
 ];
 

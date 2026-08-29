@@ -325,6 +325,9 @@ export const PRODUCT_SOURCES: Record<string, SourceVideo> = {
   "B0CZ9M6X8Q": { url: "https://www.youtube.com/@TheSamFindz", type: "youtube-shorts", creator: "Sam Findz", notes: "anker-bank — ep36 (scouting stock)" },
   "B01N1UX8RW": { url: "https://www.youtube.com/@TheSamFindz", type: "youtube-shorts", creator: "Sam Findz", notes: "renpho-scale — ep36 (scouting stock)" },
   "B000JE9LD4": { url: "https://www.youtube.com/@TheSamFindz", type: "youtube-shorts", creator: "Sam Findz", notes: "belkin-strip — ep36 (scouting stock)" },
+
+  // ===== Episode 37 (single-hero) =====
+  "B07QZVQRQD": { url: "https://www.youtube.com/@TheSamFindz", type: "youtube-shorts", creator: "Sam Findz", notes: "door-stopper — ep37 (scouting stock)" },
 };
 
 /**
@@ -856,6 +859,16 @@ export const EPISODES: EpisodeInfo[] = [
       "B0764HS4SL",
       "B010TCP3SC",
       "B0D3X1JDK4",
+    ],
+  },
+  {
+    slug: "ep37-v47-hero",
+    ytVideoId: "xuYR_WIUoAY",
+    title: "This magnetic door stopper holds any door wide open 🚪",
+    publishedAt: "2026-08-29",
+    kind: "short",
+    productAsins: [
+      "B07QZVQRQD",
     ],
   },
 ];
