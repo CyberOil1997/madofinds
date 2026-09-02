@@ -328,6 +328,13 @@ export const PRODUCT_SOURCES: Record<string, SourceVideo> = {
 
   // ===== Episode 37 (single-hero) =====
   "B07QZVQRQD": { url: "https://www.youtube.com/@TheSamFindz", type: "youtube-shorts", creator: "Sam Findz", notes: "door-stopper — ep37 (scouting stock)" },
+
+  // ===== Episode 38 (dorm, reference stock) =====
+  "B096NRJHJ2": { url: "https://www.youtube.com/@TheSamFindz", type: "youtube-shorts", creator: "Sam Findz", notes: "sunset-lamp — ep38 (reference stock)" },
+  "B0977PLLXW": { url: "https://www.youtube.com/@TheSamFindz", type: "youtube-shorts", creator: "Sam Findz", notes: "govee-leds — ep38 (reference stock)" },
+  "B08LNBM66C": { url: "https://www.youtube.com/@TheSamFindz", type: "youtube-shorts", creator: "Sam Findz", notes: "soap-dispenser — ep38 (reference stock)" },
+  "B0002QTQA0": { url: "https://www.youtube.com/@TheSamFindz", type: "youtube-shorts", creator: "Sam Findz", notes: "door-lock — ep38 (reference stock)" },
+  "B09BJRHZ7B": { url: "https://www.youtube.com/@TheSamFindz", type: "youtube-shorts", creator: "Sam Findz", notes: "owala-bottle — ep38 (reference stock)" },
 };
 
 /**
@@ -869,6 +876,20 @@ export const EPISODES: EpisodeInfo[] = [
     kind: "short",
     productAsins: [
       "B07QZVQRQD",
+    ],
+  },
+  {
+    slug: "ep38-v48-dorm",
+    ytVideoId: "pJAsobUESnw",
+    title: "5 Amazon dorm must-haves under $35 🎓",
+    publishedAt: "2026-09-02",
+    kind: "short",
+    productAsins: [
+      "B096NRJHJ2",
+      "B0977PLLXW",
+      "B08LNBM66C",
+      "B0002QTQA0",
+      "B09BJRHZ7B",
     ],
   },
 ];
