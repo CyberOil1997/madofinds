@@ -335,6 +335,13 @@ export const PRODUCT_SOURCES: Record<string, SourceVideo> = {
   "B08LNBM66C": { url: "https://www.youtube.com/@TheSamFindz", type: "youtube-shorts", creator: "Sam Findz", notes: "soap-dispenser — ep38 (reference stock)" },
   "B0002QTQA0": { url: "https://www.youtube.com/@TheSamFindz", type: "youtube-shorts", creator: "Sam Findz", notes: "door-lock — ep38 (reference stock)" },
   "B09BJRHZ7B": { url: "https://www.youtube.com/@TheSamFindz", type: "youtube-shorts", creator: "Sam Findz", notes: "owala-bottle — ep38 (reference stock)" },
+
+  // ===== Episode 39 (must-haves, reference stock) =====
+  "B0BHV31HZK": { url: "https://www.youtube.com/@TheSamFindz", type: "youtube-shorts", creator: "Sam Findz", notes: "stanley — ep39 (reference stock)" },
+  "B0CNRH993L": { url: "https://www.youtube.com/@TheSamFindz", type: "youtube-shorts", creator: "Sam Findz", notes: "sink-holder — ep39 (reference stock)" },
+  "B0C1XKXHHD": { url: "https://www.youtube.com/@TheSamFindz", type: "youtube-shorts", creator: "Sam Findz", notes: "bag-clips — ep39 (reference stock)" },
+  "B0DKFJRRNK": { url: "https://www.youtube.com/@TheSamFindz", type: "youtube-shorts", creator: "Sam Findz", notes: "bookmarks — ep39 (reference stock)" },
+  "B07TG9HHTC": { url: "https://www.youtube.com/@TheSamFindz", type: "youtube-shorts", creator: "Sam Findz", notes: "trunk-org — ep39 (reference stock)" },
 };
 
 /**
@@ -890,6 +897,20 @@ export const EPISODES: EpisodeInfo[] = [
       "B08LNBM66C",
       "B0002QTQA0",
       "B09BJRHZ7B",
+    ],
+  },
+  {
+    slug: "ep39-v49-musthaves",
+    ytVideoId: "l0vY0o6bv34",
+    title: "5 Amazon must-haves everyone actually uses 🤯",
+    publishedAt: "2026-09-07",
+    kind: "short",
+    productAsins: [
+      "B0BHV31HZK",
+      "B0CNRH993L",
+      "B0C1XKXHHD",
+      "B0DKFJRRNK",
+      "B07TG9HHTC",
     ],
   },
 ];
