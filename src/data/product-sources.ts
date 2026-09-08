@@ -342,6 +342,13 @@ export const PRODUCT_SOURCES: Record<string, SourceVideo> = {
   "B0C1XKXHHD": { url: "https://www.youtube.com/@TheSamFindz", type: "youtube-shorts", creator: "Sam Findz", notes: "bag-clips — ep39 (reference stock)" },
   "B0DKFJRRNK": { url: "https://www.youtube.com/@TheSamFindz", type: "youtube-shorts", creator: "Sam Findz", notes: "bookmarks — ep39 (reference stock)" },
   "B07TG9HHTC": { url: "https://www.youtube.com/@TheSamFindz", type: "youtube-shorts", creator: "Sam Findz", notes: "trunk-org — ep39 (reference stock)" },
+
+  // ===== Episode 40 (worth-it, reference stock) =====
+  "B00XPVN0XK": { url: "https://www.youtube.com/@TheSamFindz", type: "youtube-shorts", creator: "Sam Findz", notes: "car-vacuum — ep40 (reference stock)" },
+  "B01LWLIZDX": { url: "https://www.youtube.com/@TheSamFindz", type: "youtube-shorts", creator: "Sam Findz", notes: "waffle — ep40 (reference stock)" },
+  "B071WGTVR8": { url: "https://www.youtube.com/@TheSamFindz", type: "youtube-shorts", creator: "Sam Findz", notes: "car-trash — ep40 (reference stock)" },
+  "B08P8V83VP": { url: "https://www.youtube.com/@TheSamFindz", type: "youtube-shorts", creator: "Sam Findz", notes: "spice-jars — ep40 (reference stock)" },
+  "B09QCG2VBH": { url: "https://www.youtube.com/@TheSamFindz", type: "youtube-shorts", creator: "Sam Findz", notes: "dish-rack — ep40 (reference stock)" },
 };
 
 /**
@@ -911,6 +918,20 @@ export const EPISODES: EpisodeInfo[] = [
       "B0C1XKXHHD",
       "B0DKFJRRNK",
       "B07TG9HHTC",
+    ],
+  },
+  {
+    slug: "ep40-v50-worthit",
+    ytVideoId: "fsVVHbJamuo",
+    title: "5 Amazon finds actually worth your money 🤯",
+    publishedAt: "2026-09-09",
+    kind: "short",
+    productAsins: [
+      "B00XPVN0XK",
+      "B01LWLIZDX",
+      "B071WGTVR8",
+      "B08P8V83VP",
+      "B09QCG2VBH",
     ],
   },
 ];
