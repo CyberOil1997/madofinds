@@ -934,6 +934,30 @@ export const EPISODES: EpisodeInfo[] = [
       "B09QCG2VBH",
     ],
   },
+  {
+    slug: "long-02-home15",
+    ytVideoId: "M6Qppubf7-4",
+    title: "15 Amazon Home Gadgets That Are Actually Genius (2026)",
+    publishedAt: "2026-09-10",
+    kind: "long",
+    productAsins: [
+      "B0FQHTP1J4",
+      "B08QHVCFH8",
+      "B0FW4PYZ5K",
+      "B00RDVE2L2",
+      "B08FXTTCJX",
+      "B0DK4VM1SX",
+      "B0H4YN7B2M",
+      "B0H4VZ38J7",
+      "B0CGMZQ175",
+      "B0CQLXQW4T",
+      "B07VCBQ6KF",
+      "B00BAGTNAQ",
+      "B006LXOJC0",
+      "B00DU5SRIY",
+      "B0D4YZY511",
+    ],
+  },
 ];
 
 /** Convenience — get source video info for a given ASIN. */
